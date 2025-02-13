@@ -8,7 +8,7 @@ Welcome to the **EliteFit.ai User Guide**! This guide is designed to help you na
 Below, you'll find information organized into three main sections for easy reference:
 
 1. [**Product Tour**](./category/product-tour): A walkthrough of the platform's key features, including the Dashboard, Video Management, Patient Management, Analytics, Notifications, and Achievement Badges.
-2. [**Troubleshooting**](./category/troubleshoot): Step-by-step instructions to resolve common issues, including how to share problems via screen recordings.
+2. [**Troubleshooting**](./category/troubleshooting): Step-by-step instructions to resolve common issues, including how to share problems via screen recordings.
 3. [**FAQs**](./category/frequently-asked-questions): Answers to frequently asked questions about starting workouts, tracking progress, and managing your account.
 
 Let’s dive in and explore each section to help you get the most out of EliteFit.ai!
