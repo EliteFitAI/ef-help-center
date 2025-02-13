@@ -1,9 +1,9 @@
 ---
 sidebar_position: 1
 ---
-# EliteFit.ai User Guide
+# EliteFit.AI User Guide
 
-Welcome to the **EliteFit.ai User Guide**! This guide is designed to help you navigate and make the most of the EliteFit.ai platform. Whether you're exploring the platform for the first time, troubleshooting an issue, or looking for quick answers to common questions, this guide has you covered.
+Welcome to the **EliteFit.AI User Guide**! This guide is designed to help you navigate and make the most of the EliteFit.ai platform. Whether you're exploring the platform for the first time, troubleshooting an issue, or looking for quick answers to common questions, this guide has you covered.
 
 Below, you'll find information organized into three main sections for easy reference:
 
