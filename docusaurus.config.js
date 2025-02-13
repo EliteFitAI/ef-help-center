@@ -10,20 +10,20 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'EliteFit.AI',
+  tagline: 'Reforming Healthcare and Fitness through AI',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://www.elitefitforyou.com/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  // organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'helpcenter', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -33,7 +33,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'in', 'vi'],
   },
 
   presets: [
@@ -43,26 +43,13 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: '/',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl:
+          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
-          // Useful options to enforce blogging best practices
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'warn',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -76,70 +63,93 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'EliteFit.AI',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'EliteFit.AI Logo',
+          src: 'img/EFLogo.svg',
+          href: 'https://www.elitefitforyou.com/'
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Help Center',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
-            position: 'right',
-          },
+          // {
+          //   href: 'https://github.com/facebook/docusaurus',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'dark', // or 'light'
         links: [
           {
-            title: 'Docs',
+            items: [{
+              html: `
+            <div class="col-md-4 mb-3">
+<!--          <img class="ef-footer-logo mb-4" src="../assets/images/ef-footer-logo.png" alt="EliteFit">-->
+          <div class="ef-footer-logo mb-4">
+            <img src="./img/EFLogo.svg" alt="EliteFit"/>
+            <div class="logo-text">ELITEFIT.AI</div>
+          </div>
+          <div class="text-footer">Copyright © EliteFit Pte Ltd</div>
+          <div class="text-footer mb-4">All Rights Reserved.</div>
+          <div class="social-logo">
+            <a href="https://www.facebook.com/Elitefitforyou" target="_blank">
+              <img src="https://img.icons8.com/?size=100&id=F1Q_pDY0qwkx&format=png&color=ffffff" alt="Facebook"/>
+            </a>
+            <a href="https://www.linkedin.com/company/elitefit-ai" target="_blank">
+              <img src="https://img.icons8.com/?size=100&id=2EqeH19eMd3a&format=png&color=ffffff" alt="Linkedin"/>
+            </a>
+            <a href="https://www.youtube.com/channel/UCtFOZEYkdxcWRvGfHKIu0jQ" target="_blank">
+              <img src="https://img.icons8.com/?size=100&id=oNs9WuTrXJUL&format=png&color=ffffff" alt="YouTube"/>
+            </a>
+            <a href="https://www.instagram.com/elitefit.ai/" target="_blank">
+              <img src="https://img.icons8.com/?size=100&id=85154&format=png&color=ffffff" alt="Instagram"/>
+            </a>
+          </div>
+        </div>
+                `
+            }]
+          },
+          {
+            title: 'Who we serve',
             items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
+              { label: 'Healthcare', to: 'https://www.elitefitforyou.com//healthcare' },
+              { label: 'Fitness/Yoga', to: 'https://www.elitefitforyou.com//fitness' },
+              { label: 'Sports', to: 'https://www.elitefitforyou.com//sports' },
+              { label: 'Insurance', to: 'https://www.elitefitforyou.com//insurance' },
+              { label: 'Public Sector', to: 'https://www.elitefitforyou.com//publicsector' },
             ],
           },
           {
-            title: 'Community',
+            title: 'About EliteFit.AI',
             items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
-              },
+              { label: 'Why EliteFit.AI', to: 'https://www.elitefitforyou.com//our-journey' },
+              { label: 'Careers', to: 'https://www.elitefitforyou.com//careers' },
+              { label: 'Contact Us', to: 'https://www.elitefitforyou.com//contact-us' },
             ],
           },
           {
-            title: 'More',
+            title: 'Resources',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
+              { label: 'Videos', to: 'https://www.elitefitforyou.com//videos' },
+              { label: 'Press', to: 'https://www.elitefitforyou.com//press' },
+              { label: 'FAQ', to: 'https://www.elitefitforyou.com//faqs' },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              { label: 'Terms of Use', to: 'https://www.elitefitforyou.com//terms-of-use' },
+              { label: 'Privacy Policy', to: 'https://www.elitefitforyou.com//privacy-policy' },
+              { label: 'Cookies & Ads', to: 'https://www.elitefitforyou.com//cookie-policy' },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,

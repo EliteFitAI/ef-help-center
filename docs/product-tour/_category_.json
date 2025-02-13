@@ -1,0 +1,9 @@
+{
+    "label": "Product Tour",
+    "position": 1,
+    "link": {
+      "type": "generated-index",
+      "description": "Explore the core features of the platform, including dashboard insights, video and patient management, analytics, notifications, gamification, and settings."
+    }
+  }
+  

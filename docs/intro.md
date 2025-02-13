@@ -1,47 +1,16 @@
 ---
 sidebar_position: 1
 ---
+# EliteFit.ai User Guide
 
-# Tutorial Intro
+Welcome to the **EliteFit.ai User Guide**! This guide is designed to help you navigate and make the most of the EliteFit.ai platform. Whether you're exploring the platform for the first time, troubleshooting an issue, or looking for quick answers to common questions, this guide has you covered.
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Below, you'll find information organized into three main sections for easy reference:
 
-## Getting Started
+1. [**Product Tour**](./category/product-tour): A walkthrough of the platform's key features, including the Dashboard, Video Management, Patient Management, Analytics, Notifications, and Achievement Badges.
+2. [**Troubleshooting**](./category/troubleshoot): Step-by-step instructions to resolve common issues, including how to share problems via screen recordings.
+3. [**FAQs**](./category/frequently-asked-questions): Answers to frequently asked questions about starting workouts, tracking progress, and managing your account.
 
-Get started by **creating a new site**.
+Let’s dive in and explore each section to help you get the most out of EliteFit.ai!
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+---
