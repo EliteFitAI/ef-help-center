@@ -81,6 +81,10 @@ const config = {
           //   label: 'GitHub',
           //   position: 'right',
           // },
+          {
+            type: 'localeDropdown',
+            position: 'left',
+          },
         ],
       },
       footer: {
@@ -92,7 +96,7 @@ const config = {
             <div class="col-md-4 mb-3">
 <!--          <img class="ef-footer-logo mb-4" src="../assets/images/ef-footer-logo.png" alt="EliteFit">-->
           <div class="ef-footer-logo mb-4">
-            <img src="./img/EFLogo.svg" alt="EliteFit"/>
+            <img src="/img/EFLogo.svg" alt="EliteFit"/>
             <div class="logo-text">ELITEFIT.AI</div>
           </div>
           <div class="text-footer">Copyright © EliteFit Pte Ltd</div>
