@@ -4,6 +4,12 @@ The Notifications section allows admins to manage communications and updates sen
 
 ---
 
+### Overview
+
+![Notification](/img/Notification.png)
+
+---
+
 ## Admin Side
 
 Admins can send notifications to multiple users with various configuration options:

@@ -4,6 +4,12 @@ Admins can create custom achievement badges to motivate and engage users. Hereâ€
 
 ---
 
+### Overview
+
+![Achievement](/img/Achievement.png)
+
+---
+
 ## Creating an Achievement Badge
 
 **Click "Create Achievement":** Access the form from the top-right corner.

@@ -4,6 +4,14 @@ The Video Management section enables physio admins to manage and assign exercise
 
 ---
 
+### Overview
+
+#### Library 
+
+![Library](/img/Library.png)
+
+---
+
 ## EliteFit Library
 
 Search for videos by Body Focus, Condition, or Video Name. You can tag and assign videos to patients using predefined or custom tags.
@@ -16,7 +24,9 @@ Search for videos by Body Focus, Condition, or Video Name. You can tag and assig
 - Set Start Date and End Date (defaults applied if not set).
 - Assign a Program Name and select a Treatment Plan Type (customizable).
 - Configure exercise parameters, such as minimum time and sets.
-- Assign programs to multiple users simultaneously.
+- Assign programs to multiple users simultaneously. 
+
+![Assignpage](/img/AssignPage.png)
 
 ---
 
@@ -26,3 +36,5 @@ Admins can upload and manage custom videos:
 
 - **Upload Video:** Add videos via YouTube URL (ensure embedding permissions) or upload directly (subject to format and size restrictions).
 - Include details such as Title, Start/End Time, Thumbnail (auto-generated or uploaded), Categories, Body Focus, and Description.
+
+![Yourvids](/img/YourVids.png)

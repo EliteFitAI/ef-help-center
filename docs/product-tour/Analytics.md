@@ -4,6 +4,14 @@ The Analytics section helps admins generate reports and analyze patient progress
 
 ---
 
+### Overview
+
+![Analysis1](/img/Analysis1.png)
+
+![Analysis2](/img/Analysis2.png)
+
+---
+
 ## Patient Reports
 
 - **Search by Patient or Date Range:** Find specific reports or data for a selected time frame.

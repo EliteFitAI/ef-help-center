@@ -4,6 +4,14 @@ The Patient Management section allows admins to handle patient information, team
 
 ---
 
+### Overview
+
+![Patient](/img/Patient.png)
+
+![Team](/img/Team.png)
+
+---
+
 ## Patients
 
 - **User Table:** Displays patients and admins with permissions based on their roles.

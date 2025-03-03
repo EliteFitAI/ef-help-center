@@ -4,6 +4,12 @@ The Dashboard provides a quick overview of activities and insights for physio ad
 
 ---
 
+### Overview
+
+![Dashboard](/img/Dashboard.png)
+
+---
+
 ## Welcome Message
 
 A personalized greeting for admins when they log in.

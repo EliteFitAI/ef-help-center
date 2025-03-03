@@ -4,6 +4,12 @@ The Settings section manages platform configurations and support. Key features i
 
 ---
 
+### Overview
+
+![Supportticket](/img/Supportticket.png)
+
+---
+
 ## Support Tickets
 
 Submit forms or use chat tools integrated with external helpdesk systems.
