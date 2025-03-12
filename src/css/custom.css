@@ -16,6 +16,7 @@
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --text: #333;
   --border-color: rgba(0, 0, 0, 0.1);
 }
 
@@ -29,6 +30,7 @@
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest2: #4fddbf;
   --ifm-color-primary-lightest: #4fddbf;
+  --text: #fff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-color: #4fddbf;
 }
@@ -166,3 +168,8 @@ a:hover {
 
 img[alt=Stick] { width: 100%; height: 500px; object-fit: contain;}
 img[alt=Navigation] { height: 80px; }
+
+.boldText {
+  font-size: large;
+  color: var(--text); /* Your brand color */
+}
