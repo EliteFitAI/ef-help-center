@@ -173,3 +173,13 @@ img[alt=Navigation] { height: 80px; }
   font-size: large;
   color: var(--text); /* Your brand color */
 }
+.faq-vid{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+iframe{
+  width: 100%;
+  height: 400px;
+}
