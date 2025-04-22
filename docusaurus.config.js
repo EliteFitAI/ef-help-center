@@ -138,7 +138,7 @@ const config = {
             items: [
               { label: 'Videos', to: 'https://www.elitefitforyou.com/videos' },
               { label: 'Press', to: 'https://www.elitefitforyou.com/press' },
-              { label: 'FAQ', to: 'https://www.elitefitforyou.com/faqs' },
+              { label: 'FAQ', to: 'https://help.elitefitforyou.com/FAQs' },
             ],
           },
           {

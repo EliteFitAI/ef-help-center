@@ -1,6 +1,6 @@
 # Video Management
 
-The Video Management section enables physio admins to manage and assign exercise videos to patients. Here are the key features:
+The Video Management section enables all admins to manage and assign exercise videos to patients. Here are the key features:
 
 ---
 
