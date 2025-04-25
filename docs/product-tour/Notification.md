@@ -46,7 +46,7 @@ Admins can send notifications to multiple users with various configuration optio
 
 - **Delivery Status** Admins can view delivery status (Sent, Delivered, Failed) in the notification log.
 
-- **Personalisation** Admins can personalize notifications with dynamic fields (e.g., {UserName})
+- **Personalisation** Admins can personalize notifications with dynamic fields (e.g., UserName)
 
 ---
 
