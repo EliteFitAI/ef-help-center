@@ -406,3 +406,11 @@ To ensure consistency across devices, please follow these steps:
 </div>  
 
 ---
+
+### Q: I can't hear any sound. What should I do?
+**Ans:** Please ensure your device is not muted and the volume is turned up. If you’re still experiencing issues, try restarting your browser or device. Note: Apple devices may mute our platform by default, so please make sure to unmute it before starting your workout.
+
+---
+
+### Q: Which browser should I use for the best experience?
+**Ans:** We recommend using Google Chrome for the best performance and compatibility with our platform.

@@ -44,6 +44,10 @@ Admins can send notifications to multiple users with various configuration optio
   
 - **Notification Type:** Choose the delivery method (e.g., In-App Notification, Push Notification). (Mandatory)
 
+- **Delivery Status** Admins can view delivery status (Sent, Delivered, Failed) in the notification log.
+
+- **Personalisation** Admins can personalize notifications with dynamic fields (e.g., UserName)
+
 ---
 
 ## End User Side

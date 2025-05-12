@@ -167,6 +167,7 @@ a:hover {
 }
 
 img[alt=Stick] { width: 100%; height: 500px; object-fit: contain;}
+img[alt=Analysis4] { width: 100%; object-fit: contain;}
 img[alt=Navigation] { height: 80px; }
 
 .boldText {
