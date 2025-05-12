@@ -11,6 +11,6 @@ Below, you'll find information organized into three main sections for easy refer
 2. [**Troubleshooting**](./category/troubleshooting): Step-by-step instructions to resolve common issues, including how to share problems via screen recordings.
 3. [**FAQs**](./category/frequently-asked-questions): Answers to frequently asked questions about starting workouts, tracking progress, and managing your account.
 
-Let’s dive in and explore each section to help you get the most out of EliteFit.ai!
+Let’s dive in and explore each section to help you get the most out of EliteFit.AI!
 
 ---

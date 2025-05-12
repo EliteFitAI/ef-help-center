@@ -201,7 +201,7 @@ Getting started with your workout is simple. Below are answers to common questio
 ---
 
 ### Q: How to raise a support ticket?  
-**Ans:** This video will guide you through the steps to **submit a support ticket** if you encounter any **technical issues** while using EliteFit.ai.  
+**Ans:** This video will guide you through the steps to **submit a support ticket** if you encounter any **technical issues** while using EliteFit.AI.  
 <div className="faq-vid">
     <iframe src='https://www.youtube.com/embed/XdZrzL1_YSM?autoplay=0&mute=0'></iframe>
 </div>  
