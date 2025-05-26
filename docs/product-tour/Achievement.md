@@ -6,7 +6,7 @@ Admins can create custom achievement badges to motivate and engage users. Hereâ€
 
 ### Overview
 
-![Achievement](/img/Achievement.png)
+![Achievement](/img/Achievement2.png)
 
 ---
 
@@ -40,10 +40,11 @@ Additional details about the badge. Editing available. (Mandatory)
   - **All Workouts:** Includes all workouts in the calculation.
   - **Per Workout:** Tracks metrics for each workout after the badge creation. (Mandatory)
 - **Conditions:** Define criteria like calories burned, accuracy, or workout duration. Add multiple conditions or groups as needed. (Mandatory)
+- After evaluation method one more section added- POINTS (OPTIONAL)
 
 ---
 
-## Achievement Thumbnail
+## Achievement Badge Image
 
 Upload an image for the badge (.jpg or .png formats). (Mandatory)
 

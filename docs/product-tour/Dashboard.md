@@ -6,37 +6,34 @@ The Dashboard provides a quick overview of activities and insights for admins. H
 
 ### Overview
 
-![Dashboard](/img/Dashboard.png)
-
----
-
-## Welcome Message
-
-A personalized greeting for admins when they log in.
+![Dashboard](/img/Dashboard1.png)
 
 ---
 
 ## Overall Stats
 
-- **Today’s Users:** Shows unique users for the day or total activity (customizable).
-- **Active Users:** Displays the number of users currently online.
+- **Users:** Displays the number of unique users active for the day. This can be customized to show total activity if needed.
+- **Workout Durations:** Shows the total duration of workouts completed by users, aggregated over the day.
 - **Completed Sessions:** Tracks sessions marked complete (manual, auto-calculated, or time-based).
-- **Completed Workouts:** Records workouts marked complete through system tracking.
+- **Calories Burnt:** Reflects the estimated total calories burned from completed workouts, based on system tracking and user activity.
 
 ---
 
-## Recent Activity
+## Users
 
-Displays:
+- **Active Users Graph:** Users that have done at least one workout per day
+- **Search User:** Search for any user
+- **Start/ End Date selectors:** To select a time period for which you want to see the activity history of a user
 
-- Logged-in users.
-- Workouts completed.
-- Inactive users.
-
-**Table Columns:** Includes Name, Date, Time, and Therapist (linked to accounts or entered manually).
+![Dashboard](/img/Dashboard2.png)
 
 ---
 
-## Search Functionality
+## Demographic Distribution
 
-Search options allow global search or specific filters to quickly locate users or activities.
+- **Demographic Pie Chart:** Displays the demographic distribution of Gender/Age/Teams
+- **Filter selector:** Let’s the user choose between Gender, Age and Teams
+- **Start/End Date selectors:** Let’s user choose a timeframe for the data
+
+![Dashboard](/img/Dashboard2.png)
+
