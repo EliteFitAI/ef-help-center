@@ -41,5 +41,3 @@ Please help us replicate the issue by sharing your setup:
 - **Device Name/Model**: `[e.g., MacBook Pro, Samsung Galaxy S21]`  
 - **Operating System**: `[e.g., Windows 11, Android 13]`  
 - **Processor and RAM (if known)**: `[e.g., Intel i7, 16GB RAM]`
-
----

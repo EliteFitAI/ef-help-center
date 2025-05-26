@@ -1,6 +1,6 @@
 # Dashboard Features
 
-The Dashboard provides a quick overview of activities and insights for physio admins. Here’s what you’ll find:
+The Dashboard provides a quick overview of activities and insights for admins. Here’s what you’ll find:
 
 ---
 

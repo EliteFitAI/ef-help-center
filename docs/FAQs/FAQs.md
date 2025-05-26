@@ -414,3 +414,67 @@ To ensure consistency across devices, please follow these steps:
 
 ### Q: Which browser should I use for the best experience?
 **Ans:** We recommend using Google Chrome for the best performance and compatibility with our platform.
+
+---
+
+### Q: How do I record a Console Log?
+
+**Ans:** Console logs help us diagnose issues that aren’t visible on screen. Follow these steps:
+
+#### **In Google Chrome:**
+
+1. Open the page where the issue happens.
+2. Press `Ctrl + Shift + J` (or `Cmd + Option + J` on Mac) to open **Developer Tools**.
+3. Click the **Console** tab.
+4. Reproduce the issue to capture any errors.
+5. Right-click in the console → **Save as...** → Download the `.log` or `.txt` file.
+6. Attach this file when submitting your issue.
+
+#### **Optional – Network Logs (Advanced):**
+
+1. In Developer Tools, go to the **Network** tab.
+2. Enable **Preserve log**.
+3. Reproduce the issue.
+4. Right-click anywhere in the network panel → **Save all as HAR with content**.
+5. Share the `.har` file with us if requested.
+
+> These logs are optional but very helpful for identifying hard-to-reproduce issues.
+
+---
+
+### Q: How do I find my **Session ID**?
+
+**Answer:** Your **Session ID** is typically found in the workout URL or through your browser’s developer tools (if exposed). Here’s how you can locate it:
+
+- **From the URL after completing a workout:**  
+  Example:  
+  `https://www.elitefitforyou.com/user/end-workout/v2?sessionId=63ef9b27-5ea2-45ae-8faa-4a5aef66e172&returnToOnCancel=%2Fmanagement%2Fvideo%2Flibrary`  
+  In this case, the **Session ID** is: `63ef9b27-5ea2-45ae-8faa-4a5aef66e172`
+
+- **From the Developer's Console during an active workout:**  
+  Example:  
+  `session id ::: 53ef9b27-5ea2-45af-8faa-4a5aef66e172`  
+  Here, the **Session ID** is: `53ef9b27-5ea2-45af-8faa-4a5aef66e172`
+
+- **By checking the browser’s address bar** on the workout summary or end page.
+
+![FAQ](/img/Faq2.png)
+
+> Still unsure? Take a screenshot or share the workout URL with our support team—we'll help you identify it.
+
+---
+
+### Q: Where can I find the **Video ID**?
+
+**Answer:** The **Video ID** (sometimes shown as the workout ID or video title) is also part of the workout URL. Here’s how to find it:
+
+- **From the workout URL when active:**  
+  Example:  
+  `https://www.elitefitforyou.com/workout/PremiumFeedback?returnToOnCancel=%252Fmanagement%252Fvideo%252Flibrary&id=348458`  
+  The **Video ID** in this case is: `348458`
+
+- **By checking the browser’s address bar** when the workout is active.
+
+![FAQ](/img/Faq1.png)
+
+> If you can’t find it, just share the full workout URL with our team—we’ll extract the Video ID for you.
