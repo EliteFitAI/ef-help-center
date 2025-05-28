@@ -44,6 +44,13 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
+          lastVersion: 'current',
+          versions: {
+            current: {
+              label: '2.0',
+              path: '2.0',
+            },
+          },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl:
@@ -75,6 +82,10 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Help Center',
+          },
+          {
+            type: 'docsVersionDropdown',
+            versions: ['current', '1.0'],
           },
           // {
           //   href: 'https://github.com/facebook/docusaurus',

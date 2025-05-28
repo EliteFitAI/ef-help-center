@@ -6,7 +6,7 @@ The Notifications section allows admins to manage communications and updates sen
 
 ### Overview
 
-![Notification](/img/Notification1.png)
+![Notification](/img/Notification.png)
 
 ---
 
@@ -25,8 +25,6 @@ Admins can send notifications to multiple users with various configuration optio
 - **Image URL:** Attach an image to the notification (.jpg or .png formats). (Optional)
   
   *Example: "https://example.com/image.jpg"*
-    
-- **Notification Type:** Choose the delivery method (e.g., In-App Notification, Push Notification). (Mandatory)
 
 - **Notification Duration:** Set how long the notification stays visible (in seconds). Defaults to 5 seconds if not set. (Optional)
   
@@ -43,6 +41,8 @@ Admins can send notifications to multiple users with various configuration optio
   *Example: "John Doe, Jane Smith"*
 
 - **Send To All:** Send the notification to all users. (Optional)
+  
+- **Notification Type:** Choose the delivery method (e.g., In-App Notification, Push Notification). (Mandatory)
 
 - **Delivery Status** Admins can view delivery status (Sent, Delivered, Failed) in the notification log.
 
