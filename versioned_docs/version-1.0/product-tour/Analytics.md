@@ -8,16 +8,9 @@ The Analytics section helps admins generate reports and analyze patient progress
 
 Under Analytics there are two options- 
 
-AI Chat Report
-![Analysis1](/img/Analysis3.png)
+![Analysis1](/img/Analysis1.png)
 
-Reports section further divided - 
-
-- Personal reports
-![Analysis1](/img/Analysis4.png)
-
-- Workout reports
-![Analysis2](/img/Analysis5.png)
+![Analysis2](/img/Analysis2.png)
 
 ---
 
