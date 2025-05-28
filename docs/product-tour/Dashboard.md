@@ -6,7 +6,7 @@ The Dashboard provides a quick overview of activities and insights for admins. H
 
 ### Overview
 
-![Dashboard](/img/Dashboard1.png)
+![Dashboard](/img/Dashboard1.webp)
 
 ---
 
@@ -25,7 +25,7 @@ The Dashboard provides a quick overview of activities and insights for admins. H
 - **Search User:** Search for any user
 - **Start/ End Date selectors:** To select a time period for which you want to see the activity history of a user
 
-![Dashboard](/img/Dashboard2.png)
+![Dashboard](/img/Dashboard2.webp)
 
 ---
 
@@ -35,5 +35,5 @@ The Dashboard provides a quick overview of activities and insights for admins. H
 - **Filter selector:** Let’s the user choose between Gender, Age and Teams
 - **Start/End Date selectors:** Let’s user choose a timeframe for the data
 
-![Dashboard](/img/Dashboard2.png)
+![Dashboard](/img/Dashboard2.webp)
 

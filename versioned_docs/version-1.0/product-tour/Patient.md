@@ -6,9 +6,9 @@ The Patient Management section allows admins to handle patient information, team
 
 ### Overview
 
-![Patient](/img/Patient.png)
+![Patient](/img/Patient.webp)
 
-![Team](/img/Team.png)
+![Team](/img/Team.webp)
 
 ---
 
