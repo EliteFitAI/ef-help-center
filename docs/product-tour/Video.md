@@ -8,7 +8,7 @@ The Video Management section enables all admins to manage and assign exercise vi
 
 #### Library 
 
-![Library](/img/Library.png)
+![Library](/img/Library1.png)
 
 ---
 
@@ -26,15 +26,10 @@ Search for videos by Body Focus, Condition, or Video Name. You can tag and assig
 - Configure exercise parameters, such as minimum time and sets.
 - Assign programs to multiple users simultaneously. 
 
-![Assignpage](/img/AssignPage.png)
+![Assignpage](/img/AssignPage1.png)
 
 ---
 
 ## Your Videos
 
-Admins can upload and manage custom videos:
-
-- **Upload Video:** Add videos via YouTube URL (ensure embedding permissions) or upload directly (subject to format and size restrictions).
-- Include details such as Title, Start/End Time, Thumbnail (auto-generated or uploaded), Categories, Body Focus, and Description.
-
-![Yourvids](/img/YourVids.png)
+![Yourvids](/img/YourVids1.png)

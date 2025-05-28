@@ -1,4 +1,4 @@
-# Patient Management
+# User Management
 
 The Patient Management section allows admins to handle patient information, team setups, and role assignments efficiently. Below are the features:
 
@@ -6,9 +6,11 @@ The Patient Management section allows admins to handle patient information, team
 
 ### Overview
 
-![Patient](/img/Patient.png)
+![Patient](/img/Patient1.png)
 
-![Team](/img/Team.png)
+![Patient](/img/Patient2.png)
+
+![Team](/img/Team1.png)
 
 ---
 
