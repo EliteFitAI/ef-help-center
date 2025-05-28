@@ -48,7 +48,7 @@ const config = {
           versions: {
             current: {
               label: '2.0',
-              path: '2.0',
+              path: '',
             },
           },
           // Please change this to your repo.
