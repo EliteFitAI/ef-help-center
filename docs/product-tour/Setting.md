@@ -6,7 +6,7 @@ The Settings section manages platform configurations and support. Key features i
 
 ### Overview
 
-![Setting](/img/Setting.png)
+![Setting](/img/Setting.webp)
 
 ---
 

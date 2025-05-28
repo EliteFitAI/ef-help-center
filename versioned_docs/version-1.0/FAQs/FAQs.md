@@ -458,7 +458,7 @@ To ensure consistency across devices, please follow these steps:
 
 - **By checking the browser’s address bar** on the workout summary or end page.
 
-![FAQ](/img/Faq2.png)
+![FAQ](/img/Faq2.webp)
 
 > Still unsure? Take a screenshot or share the workout URL with our support team—we'll help you identify it.
 
@@ -475,6 +475,6 @@ To ensure consistency across devices, please follow these steps:
 
 - **By checking the browser’s address bar** when the workout is active.
 
-![FAQ](/img/Faq1.png)
+![FAQ](/img/Faq1.webp)
 
 > If you can’t find it, just share the full workout URL with our team—we’ll extract the Video ID for you.

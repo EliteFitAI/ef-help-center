@@ -6,7 +6,7 @@ The Support Ticket section manages platform configurations and support. Key feat
 
 ### Overview
 
-![Supportticket](/img/Supportticket.png)
+![Supportticket](/img/Supportticket.webp)
 
 ---
 

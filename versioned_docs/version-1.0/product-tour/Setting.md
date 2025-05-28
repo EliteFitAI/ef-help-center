@@ -6,7 +6,7 @@ The Settings section manages platform configurations and support. Key features i
 
 ### Overview
 
-![Supportticket](/img/Supportticket.png)
+![Supportticket](/img/Supportticket.webp)
 
 ---
 

@@ -6,7 +6,7 @@ Admins can create custom achievement badges to motivate and engage users. Hereâ€
 
 ### Overview
 
-![Achievement](/img/Achievement2.png)
+![Achievement](/img/Achievement2.webp)
 
 ---
 
@@ -46,7 +46,7 @@ Additional details about the badge. Editing available. (Mandatory)
 
 ## Achievement Badge Image
 
-Upload an image for the badge (.jpg or .png formats). (Mandatory)
+Upload an image for the badge (.jpg or .webp formats). (Mandatory)
 
 ---
 

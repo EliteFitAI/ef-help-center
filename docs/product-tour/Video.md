@@ -8,7 +8,7 @@ The Video Management section enables all admins to manage and assign exercise vi
 
 #### Library 
 
-![Library](/img/Library1.png)
+![Library](/img/Library1.webp)
 
 ---
 
@@ -26,10 +26,10 @@ Search for videos by Body Focus, Condition, or Video Name. You can tag and assig
 - Configure exercise parameters, such as minimum time and sets.
 - Assign programs to multiple users simultaneously. 
 
-![Assignpage](/img/AssignPage1.png)
+![Assignpage](/img/AssignPage1.webp)
 
 ---
 
 ## Your Videos
 
-![Yourvids](/img/Yourvids1.png)
+![Yourvids](/img/Yourvids1.webp)

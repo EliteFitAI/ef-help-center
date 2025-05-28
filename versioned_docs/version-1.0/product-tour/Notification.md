@@ -6,7 +6,7 @@ The Notifications section allows admins to manage communications and updates sen
 
 ### Overview
 
-![Notification](/img/Notification.png)
+![Notification](/img/Notification.webp)
 
 ---
 
@@ -22,7 +22,7 @@ Admins can send notifications to multiple users with various configuration optio
   
   *Example: "Don't forget to complete your daily workout!"*
 
-- **Image URL:** Attach an image to the notification (.jpg or .png formats). (Optional)
+- **Image URL:** Attach an image to the notification (.jpg or .webp formats). (Optional)
   
   *Example: "https://example.com/image.jpg"*
 
