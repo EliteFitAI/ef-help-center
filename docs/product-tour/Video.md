@@ -32,4 +32,4 @@ Search for videos by Body Focus, Condition, or Video Name. You can tag and assig
 
 ## Your Videos
 
-![Yourvids](/img/YourVids1.png)
+![Yourvids](/img/Yourvids1.png)
