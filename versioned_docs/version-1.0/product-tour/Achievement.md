@@ -6,7 +6,7 @@ Admins can create custom achievement badges to motivate and engage users. Hereâ€
 
 ### Overview
 
-![Achievement](/img/Achievement2.png)
+![Achievement](/img/Achievement.png)
 
 ---
 
