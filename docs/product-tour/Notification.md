@@ -6,47 +6,67 @@ The Notifications section allows admins to manage communications and updates sen
 
 ### Overview
 
-![Notification](/img/Notification1.webp)
-
----
-
-## Admin Side
-
-Admins can send notifications to multiple users with various configuration options:
-
-- **Title:** A concise and informative headline for the notification. (Mandatory)
-  
-  *Example: "Workout Reminder"*
-
-- **Message:** The main body of the notification with details or instructions. (Mandatory, e.g., character limit 200)
-  
-  *Example: "Don't forget to complete your daily workout!"*
-
-- **Image URL:** Attach an image to the notification (.jpg or .webp formats). (Optional)
-  
-  *Example: "https://example.com/image.jpg"*
+<div style={{
+  display: 'flex',
+  flexDirection: ['column', 'row'],
+  gap: '2rem',
+  margin: '2rem 0'
+}} class="discription">
+  {/* Left side - Content */}
+  <div style={{ flex: 1 }}>
     
-- **Notification Type:** Choose the delivery method (e.g., In-App Notification, Push Notification). (Mandatory)
+    <p style={{margin: 0}}>In the “Send Notification” page users will see the following data fields.</p>
+    
+    <ol style={{ paddingLeft: "10px" }}>
+      <li>
+        <strong>Title:</strong> Here the user will enter the notification title, which can be a single word or multiple words.
+      </li>
+      <li>
+        <strong>Message:</strong> This field will have the notification description or the main message of the notification
+      </li>
+      <li>
+        <strong>Icon:</strong> This is where the admins will add an image or GIF for the notification icon.
+      </li>
+      <li>
+        <strong>Notification type:</strong> Here the admin can select from two options, “In-app notification” which are notification that appear only in the application, and second “Push notification” which appear on the device notification panel as long as the user is logged in.
+      </li>
+      <li>
+        <strong>Notification Duration:</strong> Here the user can set how long will the notification float on the user screen
+      </li>
+      <li>
+        <strong>Send Options - Schedule to send:</strong> The admin can select a date and time for when he wants to schedule the notification for
+      </li>
+      <li>
+        <strong>Send Immediately:</strong> Selecting this option sends the notification as soon as the submit button is clicked
+      </li>
+      <li>
+        <strong>Receivers:</strong> The admin can select between individual or multiple users to send a notification to
+      </li>
+      <li>
+        <strong>Send to all:</strong> Selecting this option sends the notification to every user, including the admin.
+      </li>
+    </ol>
+  </div>
 
-- **Notification Duration:** Set how long the notification stays visible (in seconds). Defaults to 5 seconds if not set. (Optional)
-  
-  *Example: 10*
-
-- **Schedule to Send:** Choose a date and time for sending the notification. (Mandatory if "Send Immediately" is not selected)
-  
-  *Example: 15-11-2024 10:00*
-
-- **Send Immediately:** Bypass scheduling and send the notification instantly. (Optional)
-  
-- **Receivers:** Select specific users or groups to receive the notification. (Mandatory if "Send To All" is not selected)
-  
-  *Example: "John Doe, Jane Smith"*
-
-- **Send To All:** Send the notification to all users. (Optional)
-
-- **Delivery Status** Admins can view delivery status (Sent, Delivered, Failed) in the notification log.
-
-- **Personalisation** Admins can personalize notifications with dynamic fields (e.g., UserName)
+  {/* Right side - Image */}
+  <div style={{
+    flex: 1,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-start'
+  }}>
+    <img 
+      src="/img/Notification3.png" 
+      alt="Notification Interface" 
+      style={{
+        maxWidth: '100%',
+        height: 'auto',
+        borderRadius: '8px',
+        border: '1px solid #ddd'
+      }}
+    />
+  </div>
+</div>
 
 ---
 
@@ -59,3 +79,5 @@ Users can enable notifications via their Edit Profile page or through the permis
 - Helpful tips and updates from the admin.
 
 Users can view notifications by clicking the notification icon in the top-right corner.
+
+---
