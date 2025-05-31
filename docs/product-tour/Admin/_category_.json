@@ -1,0 +1,8 @@
+{
+  "label": "Admin",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Access administrative tools to manage platform-wide settings, oversee user roles and permissions, monitor analytics, configure notifications, control content and gamification settings, and maintain system operations across EliteFit AI."
+  }
+}
