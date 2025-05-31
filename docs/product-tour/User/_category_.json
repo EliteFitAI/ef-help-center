@@ -1,8 +1,8 @@
 {
   "label": "User",
-  "position": 3,
   "link": {
     "type": "generated-index",
-    "description": "Discover how to navigate your personal dashboard, follow assigned exercise routines, track progress through reports, engage with gamification features, and manage your profile within EliteFit AI."
-  }
+    "description": "Set personal fitness goals, follow AI-powered plans, and track results."
+  },
+  "position": 2
 }
