@@ -163,8 +163,15 @@ Getting started with your workout is simple. Below are answers to common questio
 
 ---
 
-### Q: Q- Why am I not receiving push notifications sent by my admin?
-**Ans:**
+### Q: Why am I not receiving push notifications sent by my admin?
+
+**Ans:** If you're not receiving push notifications, please ensure the following steps are consistently followed across all your devices:
+
+- **Browser Permissions:** Confirm that push notification permissions are enabled in your browser settings on every device you use.
+- **Clear Cache and Cookies:** Clear your browser's cache and cookies to remove outdated data and ensure the latest notification settings are applied.
+- **Browser and OS Versions:** Make sure that your browser and operating system are updated to the latest versions to avoid any compatibility issues that might block notifications.
+
+Following these steps will help align settings across devices and ensure you receive all push notifications as intended.
 
 ---
 
