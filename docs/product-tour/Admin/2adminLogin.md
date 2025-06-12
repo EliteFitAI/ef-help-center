@@ -1,6 +1,6 @@
 # Admin Login
 
-Go to [www.elitefitforyou.com](https://www.elitefitforyou.com). Click **Sign In**.
+Sign in to the EliteFit.AI admin portal to securely manage users, monitor workout progress, and oversee platform performance—all in one place.
 
 ## Sign In Page
 
