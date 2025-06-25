@@ -15,7 +15,7 @@
 
 .section h2 {
   font-size: 2rem;
-  color: var(--ifm-color-primary);
+  color: #000000;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -54,7 +54,7 @@
 
 .card h3 {
   font-size: 1.5rem;
-  color: var(--ifm-color-primary-lightest2);
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
