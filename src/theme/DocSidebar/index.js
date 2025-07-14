@@ -32,12 +32,12 @@ export default function DocSidebar(props) {
 
     useEffect(() => {
         const params = new URLSearchParams(window.location.search);
-        const role = params.get('role') || 'user';
+        if(params.get('role')) localStorage.setItem('role', params.get('role'))
+        const role = localStorage.getItem('role') || 'user';
 
         // SAFELY clone and filter
         const sidebar = props.sidebar;
         const filteredItems = filterSidebarItems(sidebar, role);
-        console.log(filteredItems);
         // Replace only `.items`, rest untouched
         setFilteredSidebar(filteredItems);
     }, [props.sidebar]);
