@@ -34,7 +34,6 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-color: #4fddbf;
 }
-
 /* src/css/custom.css */
 .ef-footer {
   background-color: #000000;
@@ -64,7 +63,7 @@
 .ef-footer h2 {
   font-weight: 700;
   font-size: 17px;
-  color: var(--theme);
+  color: var(--ifm-color-primary);
 }
 
 .ef-footer .social-logo a {
@@ -191,6 +190,45 @@ iframe{
   margin: 0;
   padding: 0;
 }
+
+/* Customize input field */
+.DocSearch-Button {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Hover effect */
+.DocSearch-Button:hover {
+  background-color: #e6e6e6;
+}
+
+/* Customize the dropdown modal */
+.DocSearch-Modal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Result title */
+.DocSearch-Hit-title {
+  color: #73bc45;
+  font-weight: 600;
+}
+
+/* Result category */
+.DocSearch-Hit-path {
+  color: #888;
+  font-size: 13px;
+}
+
+/* Highlighted text */
+.DocSearch-Hit-content mark {
+  background: transparent;
+  color: #d23669;
+  font-weight: bold;
+}
+
 
 @media (max-width: 1338px){
     .discription{
