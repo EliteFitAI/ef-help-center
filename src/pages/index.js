@@ -17,7 +17,7 @@ function HomepageHeader() {
           Step-by-step guides to help you accomplish every task with ease.
         </p>
         <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/intro">
+          <Link className="button button--secondary button--lg" to="/get-started/Welcome">
             Get Started 🚀
           </Link>
         </div>
@@ -35,19 +35,19 @@ export default function Home() {
           <Heading as="h2">Explore Topics</Heading>
           <p>Select a category to find detailed guides and solutions.</p>
           <div className={styles.grid}>
-            <Link className={styles.card} to="/category/get-started">
+            <Link className={styles.card} to="/get-started/Welcome">
               <h3>Getting Started</h3>
               <p>Learn the basics and set up quickly.</p>
             </Link>
-            <Link className={styles.card} to="/category/product-tour">
+            <Link className={styles.card} to="/product-tour/Admin/1userJourney">
               <h3>Features & Tools</h3>
               <p>Explore key functionalities and how to use them.</p>
             </Link>
-            <Link className={styles.card} to="/category/troubleshooting">
+            <Link className={styles.card} to="/troubleshoot/1submitting_support_requests">
               <h3>Troubleshooting</h3>
               <p>Fix common issues with step-by-step solutions.</p>
             </Link>
-            <Link className={styles.card} to="/category/frequently-asked-questions">
+            <Link className={styles.card} to="/FAQs/FAQs1">
               <h3>FAQs</h3>
               <p>Find answers to frequently asked questions.</p>
             </Link>
