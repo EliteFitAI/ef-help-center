@@ -235,6 +235,7 @@ iframe{
   img[alt=Physiotherapy11]{ display: none; }
   img[alt="User Flow for Patients"]{ display: none; }
   img[alt=Physiotherapytab]{ display: block; }
+  img[alt=Physiotherapytab1]{ display: block; }
   img[alt=Physiotherapymobile]{ display: none; }
 }
 @media screen and (max-width: 768px){

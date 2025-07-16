@@ -9,7 +9,7 @@ Welcome to the EliteFit.AI Physiotherapy Program help center. This guide will wa
 Follow these steps to get started with your workouts:
 
 ![User Flow for Patients](/img/workflow2.webp)
-![Physiotherapytab](/img/workflow5.webp)
+![Physiotherapytab1](/img/workflow5.webp)
 
 ---
 
