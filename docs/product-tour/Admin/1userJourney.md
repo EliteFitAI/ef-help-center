@@ -9,6 +9,7 @@ Welcome to the EliteFit.AI Physiotherapy Program help center. This guide will wa
 Follow these steps to get started with your workouts:
 
 ![User Flow for Patients](/img/workflow2.webp)
+![Physiotherapytab](/img/workflow5.webp)
 
 ---
 
@@ -16,7 +17,9 @@ Follow these steps to get started with your workouts:
 
 Understand the entire workflow from EliteFit.AI to patients and physiotherapists:
 
-![Physiotherapy Program Workflow](/img/workflow1.webp)
+![Physiotherapy11](/img/workflow1.webp)
+![Physiotherapytab](/img/workflow3.webp)
+![Physiotherapymobile](/img/workflow4.webp)
 
 - **EliteFit.AI** sets up the platform and sends sign-up links to admins.
 - **Physio Admins** log in, configure programs, and monitor reports.

@@ -5,7 +5,7 @@ Whether you're an individual ready to kickstart your fitness journey or an organ
 
 To help you get started, we’ve created step-by-step setup guides tailored for both:
 
-- [**Admins**](/category/admin) – Manage teams, assign workouts, and monitor progress.
-- [**Users**](/category/user) – Set personal fitness goals, follow AI-powered plans, and track results.
+- [**Admins**](/product-tour/Admin/1userJourney) – Manage teams, assign workouts, and monitor progress.
+- [**Users**](/product-tour/User/1userFlow) – Set personal fitness goals, follow AI-powered plans, and track results.
 
 Choose your path above to begin setting up your account.
