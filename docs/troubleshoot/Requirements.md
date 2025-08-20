@@ -22,16 +22,23 @@ _This is crucial to replicate the user’s experience._
 
 ---
 
-## Workout-Specific Issues (if applicable)  
+## Workout-Specific Issues (if applicable)
 If the issue is related to a workout activity, please include the following:
 
-- **Session ID**: `[Enter session ID]`  
-- **Workout URL**: `[Enter workout URL]`  
-- **Video ID or Title**: `[Enter video ID or title]`  
-- **Console Logs & Network Logs** _(Optional)_  
-  - _Only required if the issue is hard to reproduce on our end but consistently occurs for the user._  
-  `[Attach logs if applicable]`
+- **Session ID**: `[Enter session ID]` <br />
+  [**How to find your Session ID**](/FAQs/FAQs1#q-how-do-i-find-my-session-id)
 
+- **Workout URL**: `[Enter workout URL]`  <br />
+  - _(This is the url shown in your browser’s search bar once the workout has started)_
+
+- **Video ID or Title**: `[Enter video ID or title]`  <br />
+  [**How to find your Video ID**](/FAQs/FAQs1#q-where-can-i-find-the-video-id)
+
+- **Console Logs & Network Logs** _(Optional)_
+  - _Only required if the issue is hard to reproduce on our end but consistently occurs for the user._  
+    `[Attach logs if applicable]`<br />
+
+  [**How to find your Console Logs**](/FAQs/FAQs1#q-how-do-i-record-a-console-log)
 ---
 
 ## Environment Details  
