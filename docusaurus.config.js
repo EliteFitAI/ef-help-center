@@ -176,6 +176,20 @@ const config = {
       //   searchPagePath: 'search',
       // },
     }),
+
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        hashed: true,
+        language: ['en'], // add more if needed
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: true,
+        docsRouteBasePath: '/', // or 'docs' depending on your setup
+      },
+    ],
+  ],
 };
 
 export default config;
