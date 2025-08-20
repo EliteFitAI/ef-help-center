@@ -182,11 +182,15 @@ const config = {
       require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
-        language: ['en'], // add more if needed
         indexDocs: true,
         indexBlog: true,
         indexPages: true,
-        docsRouteBasePath: '/', // or 'docs' depending on your setup
+        language: ['en'],
+        removeDefaultStemmer: true,          // partial words
+        fuzzyMatchingDistance: 1,            // typos
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 10,
+        searchResultContextMaxLength: 80,
       },
     ],
   ],
