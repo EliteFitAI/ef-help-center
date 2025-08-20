@@ -36,6 +36,8 @@ const config = {
     locales: ['en'],
   },
 
+  clientModules: [require.resolve('./src/ClientModules/ScrollToCenter.js')],
+
   presets: [
     [
       'classic',
