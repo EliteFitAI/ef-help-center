@@ -22,6 +22,13 @@ function HomepageHeader() {
           </Link>
         </div>
       </div>
+      <Link
+          className="button hero-button button--primary"
+          style={{ marginLeft: '1rem' }}
+          to="/features/assessment"
+      >
+        Try Assessment Feature
+      </Link>
     </header>
   );
 }
