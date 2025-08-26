@@ -50,6 +50,13 @@ const sidebars = {
             'product-tour/User/5otherFeatures',
           ],
         },
+        {
+          type: 'category',
+          label: 'Assessments',
+          items: [
+            'product-tour/Assessments/Assessment',
+          ],
+        },
       ],
     },
     {
