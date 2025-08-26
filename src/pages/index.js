@@ -24,10 +24,10 @@ function HomepageHeader() {
       </div>
       <Link
           className="button hero-button button--primary"
-          style={{ marginLeft: '1rem' }}
-          to="/features/assessment"
+          style={{ marginLeft: '1rem', zIndex: '10'}}
+          to="/product-tour/Assessment"
       >
-        Try Assessment Feature
+        Assessment
       </Link>
     </header>
   );

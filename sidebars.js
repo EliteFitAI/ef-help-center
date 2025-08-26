@@ -31,6 +31,13 @@ const sidebars = {
         },
         {
           type: 'category',
+          label: 'Assessment',
+          items: [
+            'product-tour/Assessment/Assessment',
+          ],
+        },
+        {
+          type: 'category',
           label: 'User',
           items: [
             {

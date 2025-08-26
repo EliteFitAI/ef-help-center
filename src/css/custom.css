@@ -258,6 +258,11 @@ iframe{
   overflow: hidden;
 }
 
+.button--primary{
+  background-color: #73bc45;
+  border: none;
+}
+
 .hero-button:before {
   content: '';
   position: absolute;
