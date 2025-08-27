@@ -8,21 +8,38 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero', styles.heroBanner)} style={{ backgroundColor: '#73bc45' }}>
-      <div className="container">
-        <h1 className="hero__title" style={{ color: '#fff' }}>
-          Welcome to the {siteConfig.title} Help Center
-        </h1>
-        <p className="hero__subtitle" style={{ color: '#f3f3f3' }}>
-          Step-by-step guides to help you accomplish every task with ease.
-        </p>
-        <div className={styles.buttons}>
-          <Link className="button button--secondary button--lg" to="/get-started/Welcome">
-            Get Started 🚀
-          </Link>
+      <header className="hero" style={{ backgroundColor: '#73bc45' }}>
+        <div className="hero-background">
+          <div className="hero-background-pattern"></div>
         </div>
-      </div>
-    </header>
+
+        <div className="container text-center">
+          <div className={`hero-content visible`}>
+            <h1 className="hero__title" style={{ color: '#fff' }}>
+              Welcome to the {siteConfig.title} Help Center
+            </h1>
+            <p className="hero__subtitle" style={{ color: '#f3f3f3' }}>
+              Step-by-step guides to help you accomplish every task with ease.
+            </p>
+
+            <div className="hero-buttons">
+              <Link
+                  className="hero-button button--secondary"
+                  to="/get-started/Welcome"
+              >
+                <span>Get Started</span>
+              </Link>
+              <Link
+                  className="hero-button button--secondary pulse"
+                  to="/product-tour/Assessments/Assessment"
+              >
+                <span>About Assessments Product</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </header>
+
   );
 }
 

@@ -8,6 +8,7 @@ const sidebars = {
     },
     {
       type: 'category',
+      className: 'new-feature',
       label: 'Product Tour',
       items: [
         {
@@ -53,6 +54,7 @@ const sidebars = {
         {
           type: 'category',
           label: 'Assessments',
+          className: 'new-feature',
           items: [
             'product-tour/Assessments/Assessment',
           ],

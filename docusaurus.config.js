@@ -27,6 +27,15 @@ const config = {
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css',
+      },
+    },
+  ],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -60,7 +69,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -88,6 +97,18 @@ const config = {
           {
             type: 'docsVersionDropdown',
             versions: ['current', '1.0'],
+          },
+          {
+            type: 'html',
+            position: 'right',
+            value: `
+            <a
+                  class="hero-button button--primary-header"
+                  href="/product-tour/Assessments/Assessment#ready-to-begin"
+              >
+                <span>Assessments</span>
+              </a>
+          `,
           },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
@@ -133,7 +154,6 @@ const config = {
             items: [
               { label: 'Healthcare', to: 'https://www.elitefitforyou.com/healthcare' },
               { label: 'Fitness/Yoga', to: 'https://www.elitefitforyou.com/fitness' },
-              { label: 'Sports', to: 'https://www.elitefitforyou.com/sports' },
               { label: 'Insurance', to: 'https://www.elitefitforyou.com/insurance' },
               { label: 'Public Sector', to: 'https://www.elitefitforyou.com/publicsector' },
             ],
@@ -178,7 +198,6 @@ const config = {
       //   searchPagePath: 'search',
       // },
     }),
-
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
