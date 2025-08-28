@@ -4,6 +4,10 @@
  * work well for content-centric websites.
  */
 
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
 /* You can override the default Infima variables here. */
 :root {
   --ifm-color-primary: #2e8555;
@@ -40,6 +44,10 @@
   color: #ffffff;
   text-align: start !important;
   font-size: 14px;
+}
+
+a p{
+  margin: 0
 }
 
 .navbar--fixed-top{

@@ -57,6 +57,7 @@ const sidebars = {
           className: 'new-featurep',
           items: [
             'product-tour/Assessments/Assessment',
+            'product-tour/Assessments/Troubleshoot',
           ],
         },
       ],

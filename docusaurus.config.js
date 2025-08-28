@@ -24,7 +24,12 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'helpcenter', // Usually your repo name.
-
+  stylesheets: [
+    {
+      href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+      type: "text/css",
+    },
+  ],
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   headTags: [
@@ -37,9 +42,6 @@ const config = {
     },
   ],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -80,6 +82,9 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true, // Respects user's system preference
+      },
       navbar: {
         title: 'EliteFit.AI',
         logo: {
@@ -214,6 +219,7 @@ const config = {
         searchResultContextMaxLength: 80,
       },
     ],
+      './postcss.config.js'
   ],
 };
 
