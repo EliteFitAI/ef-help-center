@@ -42,6 +42,10 @@
   font-size: 14px;
 }
 
+.navbar--fixed-top{
+  height: unset !important;
+}
+
 .ef-footer .ef-footer-logo {
   width: fit-content;
   text-align: center;
@@ -173,6 +177,8 @@ img[alt=InviteUser] {width: 100%; height: 250px; object-fit: contain;}
 img[alt=Physiotherapytab] {display: none}
 img[alt=Physiotherapytab1] {display: none}
 img[alt=Physiotherapymobile] {display: none}
+img[alt='User Flow for Assessments'] {display: block}
+img[alt='User Flow for Assessments Mob'] {display: none}
 
 .boldText {
   font-size: large;
@@ -231,6 +237,7 @@ iframe{
   color: #d23669;
   font-weight: bold;
 }
+
 
 .hero {
   position: relative;
@@ -317,21 +324,6 @@ iframe{
   overflow: hidden;
 }
 
-.hero-button:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.hero-button:hover:before {
-  left: 100%;
-}
-
 .hero-button:hover {
   transform: translateY(-3px);
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.2);
@@ -342,6 +334,16 @@ iframe{
 }
 
 .button--secondary {
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+  position: relative;
+  overflow: hidden;
   background-color: #fff;
   color: #73bc45;
   border: 2px solid #fff;
@@ -352,17 +354,126 @@ iframe{
   color: #fff;
 }
 
-.button--primary {
-  background-color: #4a90e2;
-  color: white;
-  border: 2px solid #4a90e2;
+.button--primary-header {
+  background: linear-gradient(135deg, #73BC45 0%, #73BC45 100%);
+  color: #FFFFFF;
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+  position: relative;
+  overflow: hidden;
+  animation: pulse 2s infinite;
 }
 
-.button--primary:hover {
-  background-color: #3a7bc8;
-  color: white;
-  border-color: #3a7bc8;
+.pulse{
+  animation: pulse2 2s infinite;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
+
+.button--primary-header:hover {
+  background-color: #00a37c;
+  color: white;
+  border-color: #00a37c;
+}
+
+:root {
+  --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%); /* Modern gradient */
+  --badge-color: #fff;
+  --badge-glow: #89CFF0;
+  --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
+}
+
+.new-feature, .new-featurep {
+  position: relative;
+}
+
+.new-feature::after {
+  content: 'NEW';
+  /* Layout */
+  position: absolute;
+  top: 5px; /* Position it slightly above the text */
+  right: 5px; /* Position it to the right of the text */
+  /* Typography */
+  font-family: var(--badge-font);
+  font-size: 0.5rem; /* Slightly smaller, tighter */
+  font-weight: 800; /* Heavier weight for impact */
+  letter-spacing: 0.05em; /* Small letter spacing for modernity */
+  text-transform: uppercase;
+  /* Visual Style */
+  color: var(--badge-glow);
+  padding: 3px 6px; /* Balanced padding */
+  border-radius: 6px; /* Slightly smaller radius */
+  /* Animation & Effects */
+  animation: floatAndPulse 2.5s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+  /* Ensure clean rendering */
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(4px); /* Subtle blur for a "frosted" effect (optional) */
+}
+
+/* Hover effect on the parent element */
+.new-feature:hover::after {
+  color: white;
+  animation-duration: 0.8s; /* Speed up animation on hover */
+}
+
+.new-featurep::before {
+  content: 'NEW';
+  /* Layout */
+  position: absolute;
+  top: 5px; /* Position it slightly above the text */
+  right: 35px; /* Position it to the right of the text */
+  /* Typography */
+  font-family: var(--badge-font);
+  font-size: 0.5rem; /* Slightly smaller, tighter */
+  font-weight: 800; /* Heavier weight for impact */
+  letter-spacing: 0.05em; /* Small letter spacing for modernity */
+  text-transform: uppercase;
+  /* Visual Style */
+  color: var(--badge-glow);
+  padding: 3px 6px; /* Balanced padding */
+  border-radius: 6px; /* Slightly smaller radius */
+  /* Animation & Effects */
+  animation: floatAndPulse 2.5s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+  /* Ensure clean rendering */
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(4px); /* Subtle blur for a "frosted" effect (optional) */
+}
+
+/* Hover effect on the parent element */
+.new-featurep:hover::before {
+  animation-duration: 0.8s; /* Speed up animation on hover */
+}
+
+/* Single, combined smooth animation */
+@keyframes floatAndPulse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.05); /* Float up and scale slightly */
+  }
+}
+
+
+@keyframes textRainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 300% 50%;
+  }
+}
+
 
 .button-icon {
   margin-right: 0.75rem;
@@ -384,360 +495,32 @@ iframe{
   transform: translateY(0);
 }
 
-.floating-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(10px);
-  border-radius: 16px;
-  padding: 1.5rem;
-  text-align: center;
-  width: 180px;
-  animation: float 6s ease-in-out infinite;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.floating-card:nth-child(2) {
-  animation-delay: 2s;
-}
-
-.card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-.floating-card h3 {
-  color: white;
-  font-size: 1.1rem;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-}
-
-.floating-card p {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-@keyframes float {
+@keyframes pulse{
   0% {
-    transform: translateY(0px);
+    box-shadow: 0 0 #4a90e2b3;
   }
-  50% {
-    transform: translateY(-15px);
+
+  70% {
+    box-shadow: 0 0 0 10px #4a90e200;
   }
   100% {
-    transform: translateY(0px);
+    box-shadow: 0 0 #4a90e200;
   }
 }
 
-
-.help-center-container {
-  padding: 2rem 1.5rem;
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.help-center-section {
-  margin-bottom: 4rem;
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  padding: 0 1rem;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #2c3e50;
-  margin-bottom: 1rem;
-}
-
-.section-description {
-  font-size: 1.2rem;
-  color: #7f8c8d;
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-.topics-grid {
-  display: flex;
-  gap: 1.8rem;
-  padding: 0 0.5rem;
-}
-
-.topic-card {
-  display: flex;
-  flex-direction: column;
-  background: white;
-  border-radius: 16px;
-  width: 300px;
-  padding: 1.8rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.3s ease;
-  height: 100%;
-}
-
-.topic-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.topic-card:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 100%;
-  background-color: var(--accent-color);
-  transition: width 0.3s ease;
-}
-
-.topic-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-}
-
-.topic-card:hover:before {
-  width: 8px;
-}
-
-.card-icon {
-  font-size: 2.8rem;
-  margin-bottom: 1.5rem;
-}
-
-.card-content h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-  color: #2c3e50;
-  line-height: 1.3;
-}
-
-.card-content p {
-  color: #7f8c8d;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-}
-
-.card-arrow {
-  margin-top: auto;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--accent-color);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  align-self: flex-end;
-}
-
-.topic-card:hover .card-arrow {
-  opacity: 1;
-}
-
-/* Additional help section */
-.additional-help {
-  margin-top: 4rem;
-  padding: 0 0.5rem;
-}
-
-.help-card {
-  display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, #73bc45 0%, #73bc45 100%);
-  border-radius: 16px;
-  padding: 2.2rem;
-  color: white;
-  box-shadow: 0 6px 25px rgba(42, 191, 163, 0.4);
-  max-width: 100%;
-}
-
-.help-icon {
-  font-size: 3.5rem;
-  margin-right: 2rem;
-  flex-shrink: 0;
-}
-
-.help-content h3 {
-  font-size: 1.6rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-}
-
-.help-content p {
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-  opacity: 0.95;
-  max-width: 600px;
-}
-
-.help-button {
-  background: white;
-  color: #4f8df9;
-  border: none;
-  padding: 0.8rem 1.8rem;
-  border-radius: 50px;
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.help-button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  background: #f8f9fa;
-}
-
-/* Responsive design */
-@media (min-width: 1200px) {
-  .help-center-container {
-    padding: 2.5rem 2.5rem;
+@keyframes pulse2{
+  0% {
+    box-shadow: 0 0 #4a90e2;
   }
 
-  .topics-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  70% {
+    box-shadow: 0 0 0 10px #4a90e200;
   }
-
-  .section-header {
-    padding: 0 2rem;
+  100% {
+    box-shadow: 0 0 #4a90e200;
   }
 }
 
-@media (max-width: 992px) {
-  .help-center-container {
-    padding: 1.8rem 1.2rem;
-  }
-
-  .section-title {
-    font-size: 2.2rem;
-  }
-
-  .section-description {
-    font-size: 1.1rem;
-  }
-
-  .topics-grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
-  }
-}
-
-@media (max-width: 768px) {
-  .help-center-container {
-    padding: 1.5rem 1rem;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-description {
-    font-size: 1.1rem;
-  }
-
-  .topics-grid {
-    grid-template-columns: 1fr;
-    gap: 1.2rem;
-    padding: 0;
-  }
-
-  .topic-card {
-    padding: 1.5rem;
-  }
-
-  .help-card {
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem 1.5rem;
-  }
-
-  .help-icon {
-    margin-right: 0;
-    margin-bottom: 1.5rem;
-    font-size: 3rem;
-  }
-
-  .help-content h3 {
-    font-size: 1.5rem;
-  }
-
-  .help-content p {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .help-center-container {
-    padding: 1.2rem 0.8rem;
-  }
-
-  .section-header {
-    padding: 0 0.5rem;
-  }
-
-  .section-title {
-    font-size: 1.8rem;
-  }
-
-  .topic-card {
-    padding: 1.2rem;
-    border-radius: 12px;
-  }
-
-  .card-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .card-content h3 {
-    font-size: 1.3rem;
-  }
-}
-
-/* Animation for cards */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Reduced motion for accessibility */
-@media (prefers-reduced-motion: reduce) {
-  .topic-card {
-    transition: none;
-  }
-
-  .topic-card:before {
-    transition: none;
-  }
-
-  .card-arrow {
-    transition: none;
-  }
-
-  .help-button {
-    transition: none;
-  }
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -776,6 +559,7 @@ iframe{
   }
 }
 
+
 @media screen and (max-width: 1024px){
   img[alt=Physiotherapy11]{ display: none; }
   img[alt="User Flow for Patients"]{ display: none; }
@@ -786,13 +570,15 @@ iframe{
 @media screen and (max-width: 768px){
   img[alt=Physiotherapy11]{ display: none; }
   img[alt="User flow"]{ display: none; }
+  img[alt='User Flow for Assessments Mob'] {display: block}
+  img[alt='User Flow for Assessments'] {display: none}
   img[alt=Physiotherapytab]{ display: none; }
   img[alt=Physiotherapymobile]{ display: block; }
 }
 
 
 @media (max-width: 1338px){
-    .discription{
-      flex-direction: column
-    }
+  .discription{
+    flex-direction: column
   }
+}

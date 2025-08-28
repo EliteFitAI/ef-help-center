@@ -38,7 +38,7 @@ function HomepageHeader() {
                 <span>Get Started</span>
               </Link>
               <Link
-                  className="hero-button button--primary"
+                  className="hero-button button--primary-header pulse"
                   to="/features/assessment"
               >
                 <span>Try Assessment Feature</span>
