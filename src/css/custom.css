@@ -350,8 +350,8 @@ iframe{
 }
 
 .button--secondary:hover {
-  background-color: transparent;
-  color: #fff;
+  /*background-color: transparent;*/
+  color: #73bc45;
 }
 
 .button--primary-header {
@@ -385,7 +385,7 @@ iframe{
 :root {
   --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%); /* Modern gradient */
   --badge-color: #fff;
-  --badge-glow: #89CFF0;
+  --badge-glow: #fff;
   --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
 }
 
@@ -420,7 +420,7 @@ iframe{
 
 /* Hover effect on the parent element */
 .new-feature:hover::after {
-  color: white;
+  /*color: white;*/
   animation-duration: 0.8s; /* Speed up animation on hover */
 }
 
