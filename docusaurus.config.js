@@ -99,6 +99,18 @@ const config = {
             position: 'left',
             label: 'Help Center',
           },
+
+          {
+            type: 'html',
+            position: 'right',
+            value: `<a
+                  class="hero-button button--primary-header pulse new-feature"
+                  href="/product-tour/Assessments/Assessment"
+              >
+                <span>Explore Assessments</span>
+              </a>`
+          },
+
           {
             type: 'docsVersionDropdown',
             versions: ['current', '1.0'],
