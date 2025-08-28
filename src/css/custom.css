@@ -46,10 +46,6 @@
   font-size: 14px;
 }
 
-a p{
-  margin: 0
-}
-
 .navbar--fixed-top{
   height: unset !important;
 }
@@ -358,12 +354,12 @@ iframe{
 }
 
 .button--secondary:hover {
-  background-color: transparent;
-  color: #fff;
+  /*background-color: transparent;*/
+  color: #73bc45;
 }
-
+/* Main button container */
 .button--primary-header {
-  background: linear-gradient(135deg, #73BC45 0%, #73BC45 100%);
+  background: linear-gradient(135deg, #73BC45 0%, #5ea23a 100%); /* slight depth */
   color: #FFFFFF;
   padding: .75rem 1.5rem;
   border-radius: .5rem;
@@ -373,10 +369,62 @@ iframe{
   align-items: center;
   gap: .5rem;
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
   position: relative;
   overflow: hidden;
   animation: pulse 2s infinite;
+}
+
+/* Hover 3D lift */
+.button--primary-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 16px rgba(0,0,0,0.25), inset 0 2px 2px rgba(255,255,255,0.25);
+}
+
+/* Pastel rainbow gradient text */
+.button--primary-header span {
+  color: white;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  animation: gradientShift 12s ease infinite;
+  overflow: hidden;
+}
+
+/* Shine effect on text */
+.button--primary-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0) 20%,
+          rgba(255, 255, 255, 0.3) 50%,
+          rgba(255, 255, 255, 0) 80%
+  );
+  animation: shine 4s infinite;
+}
+
+/* Text gradient animation */
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Shine animation */
+@keyframes shine {
+  0%   { left: -100%; }
+  100% { left: 150%; }
+}
+
+/* Pulse animation from your original */
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.05); }
 }
 
 .pulse{
@@ -393,7 +441,7 @@ iframe{
 :root {
   --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%); /* Modern gradient */
   --badge-color: #fff;
-  --badge-glow: #89CFF0;
+  --badge-glow: #fff;
   --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
 }
 
@@ -428,7 +476,7 @@ iframe{
 
 /* Hover effect on the parent element */
 .new-feature:hover::after {
-  color: white;
+  /*color: white;*/
   animation-duration: 0.8s; /* Speed up animation on hover */
 }
 
@@ -586,7 +634,7 @@ iframe{
 
 
 @media (max-width: 1338px){
-    .discription{
-      flex-direction: column
-    }
+  .discription{
+    flex-direction: column
   }
+}
