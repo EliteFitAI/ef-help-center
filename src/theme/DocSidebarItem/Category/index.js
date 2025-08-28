@@ -150,7 +150,6 @@ export default function DocSidebarItemCategory({
               ? (e) => {
                   onItemClick?.(item);
                   if(item.label === 'Product Tour') {
-                      console.log("hello", classN)
                       collapsed ? setClassN('') : setClassN('new-featurep')
                   }
                   if (href) {
