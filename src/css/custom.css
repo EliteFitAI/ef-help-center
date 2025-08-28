@@ -379,20 +379,7 @@ iframe{
 
 /* Pastel rainbow gradient text */
 .button--primary-header span {
-  background: linear-gradient(
-          270deg,
-          #A8E6CF,
-          #B2EBF2,
-          #ADD8E6,
-          #E6E6FA,
-          #FFB6C1,
-          #FFDAB9,
-          #FAFAD2,
-          #A8E6CF
-  );
-  background-size: 300% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
   font-weight: 700;
   position: relative;
   display: inline-block;

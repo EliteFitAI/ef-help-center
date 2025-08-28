@@ -89,6 +89,16 @@ const config = {
             type: 'docsVersionDropdown',
             versions: ['current', '1.0'],
           },
+          {
+            type: 'html',
+            position: 'right',
+            value: `<a
+                  class="hero-button button--primary-header pulse new-feature"
+                  href="/product-tour/Assessments/Assessment"
+              >
+                <span>Explore Assessments</span>
+              </a>`
+          }
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
