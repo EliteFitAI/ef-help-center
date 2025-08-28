@@ -440,7 +440,7 @@ iframe{
 
 :root {
   --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%); /* Modern gradient */
-  --badge-color: #fff;
+  --badge-color: cadetblue;
   --badge-glow: #fff;
   --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
 }
@@ -493,7 +493,7 @@ iframe{
   letter-spacing: 0.05em; /* Small letter spacing for modernity */
   text-transform: uppercase;
   /* Visual Style */
-  color: var(--badge-glow);
+  color: var(--badge-color);
   padding: 3px 6px; /* Balanced padding */
   border-radius: 6px; /* Slightly smaller radius */
   /* Animation & Effects */

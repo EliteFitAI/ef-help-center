@@ -149,7 +149,8 @@ export default function DocSidebarItemCategory({
             collapsible
               ? (e) => {
                   onItemClick?.(item);
-                  if(item.label == 'Product Tour') {
+                  if(item.label === 'Product Tour') {
+                      console.log("hello", classN)
                       collapsed ? setClassN('') : setClassN('new-featurep')
                   }
                   if (href) {
