@@ -98,18 +98,18 @@ const config = {
             type: 'docsVersionDropdown',
             versions: ['current', '1.0'],
           },
-          {
-            type: 'html',
-            position: 'right',
-            value: `
-            <a
-                  class="hero-button button--primary-header"
-                  href="/product-tour/Assessments/Assessment#ready-to-begin"
-              >
-                <span>Assessments</span>
-              </a>
-          `,
-          },
+          // {
+          //   type: 'html',
+          //   position: 'right',
+          //   value: `
+          //   <a
+          //         class="hero-button button--primary-header"
+          //         href="/product-tour/Assessments/Assessment#ready-to-begin"
+          //     >
+          //       <span>Assessments</span>
+          //     </a>
+          // `,
+          // },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',

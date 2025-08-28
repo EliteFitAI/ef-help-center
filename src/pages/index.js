@@ -30,10 +30,10 @@ function HomepageHeader() {
                 <span>Get Started</span>
               </Link>
               <Link
-                  className="hero-button button--secondary pulse"
+                  className="hero-button button--secondary pulse new-feature"
                   to="/product-tour/Assessments/Assessment"
               >
-                <span>About Assessments Product</span>
+                <span>Explore Assessments</span>
               </Link>
             </div>
           </div>

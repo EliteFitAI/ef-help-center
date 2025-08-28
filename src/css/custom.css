@@ -382,17 +382,6 @@ iframe{
   border-color: #00a37c;
 }
 
-
-.new-flag {
-  background: #ff4757;
-  color: #fff;
-  font-size: 10px;
-  font-weight: bold;
-  padding: 2px 6px;
-  border-radius: 8px;
-  margin-left: 6px;
-  text-transform: uppercase;
-}
 :root {
   --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%); /* Modern gradient */
   --badge-color: #fff;
@@ -400,11 +389,42 @@ iframe{
   --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
 }
 
-.new-feature {
+.new-feature, .new-featurep {
   position: relative;
 }
 
 .new-feature::after {
+  content: 'NEW';
+  /* Layout */
+  position: absolute;
+  top: 5px; /* Position it slightly above the text */
+  right: 5px; /* Position it to the right of the text */
+  /* Typography */
+  font-family: var(--badge-font);
+  font-size: 0.5rem; /* Slightly smaller, tighter */
+  font-weight: 800; /* Heavier weight for impact */
+  letter-spacing: 0.05em; /* Small letter spacing for modernity */
+  text-transform: uppercase;
+  /* Visual Style */
+  color: var(--badge-glow);
+  padding: 3px 6px; /* Balanced padding */
+  border-radius: 6px; /* Slightly smaller radius */
+  /* Animation & Effects */
+  animation: floatAndPulse 2.5s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+  /* Ensure clean rendering */
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(4px); /* Subtle blur for a "frosted" effect (optional) */
+}
+
+/* Hover effect on the parent element */
+.new-feature:hover::after {
+  color: white;
+  animation-duration: 0.8s; /* Speed up animation on hover */
+}
+
+.new-featurep::before {
   content: 'NEW';
   /* Layout */
   position: absolute;
@@ -430,7 +450,7 @@ iframe{
 }
 
 /* Hover effect on the parent element */
-.new-feature:hover::after {
+.new-featurep:hover::before {
   animation-duration: 0.8s; /* Speed up animation on hover */
 }
 
