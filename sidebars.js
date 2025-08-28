@@ -29,13 +29,13 @@ const sidebars = {
             'product-tour/Admin/2adminLogin',
           ],
         },
-        {
-          type: 'category',
-          label: 'Assessment',
-          items: [
-            'product-tour/Assessment/Assessment',
-          ],
-        },
+        // {
+        //   type: 'category',
+        //   label: 'Assessment',
+        //   items: [
+        //     // 'product-tour/Assessment/Assessment',
+        //   ],
+        // },
         {
           type: 'category',
           label: 'User',
