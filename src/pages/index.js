@@ -5,6 +5,7 @@ import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import React, { useState, useEffect } from 'react';
+import img from '../../static/img/Distributor_home.webp'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -15,7 +16,7 @@ function HomepageHeader() {
     setIsVisible(true);
   }, []);
   return (
-      <header className="hero" style={{ backgroundColor: '#73bc45' }}>
+      <header className="hero" style={{ backgroundImage: `url(${img})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '70vh' }}>
         <div className="hero-background">
           <div className="hero-background-pattern"></div>
         </div>
