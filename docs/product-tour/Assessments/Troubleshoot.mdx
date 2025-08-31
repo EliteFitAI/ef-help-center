@@ -4,80 +4,67 @@ import Link from '@docusaurus/Link';
 
 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
 
-  <div className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+  <Link to="/troubleshooting/getting-started" style={{transition: 'all 0.5s ease'}} className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
     <div className="flex items-center mb-3">
       <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mr-4 group-hover:bg-blue-100 transition-colors">
         <span className="material-icons text-blue-600 text-xl">rocket_launch</span>
       </div>
       <div className="text-lg font-bold text-gray-900 m-0">
-        <Link to="/troubleshooting/getting-started" className="text-inherit no-underline hover:text-blue-600 transition-colors">Getting Started</Link>
+        <Link to="/troubleshooting/getting-started" className="text-inherit no-underline hover:text-blue-600 transition-colors">Login and Account setup</Link>
       </div>
     </div>
-    <p className="text-gray-600 text-sm">First time here? Start your troubleshooting journey.</p>
-  </div>
+    <p className="text-gray-600 text-sm">New User? Difficulty in setting up your account? Click here</p>
+  </Link>
 
-    <div className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+    <Link to="/troubleshooting/permissions" style={{transition: 'all 0.5s ease'}} className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
     <div className="flex items-center mb-3">
       <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mr-4 group-hover:bg-red-100 transition-colors">
         <span className="material-icons text-red-600 text-xl">admin_panel_settings</span>
       </div>
       <div className="text-lg font-bold text-gray-900 m-0">
-        <Link to="/troubleshooting/permissions" className="text-inherit no-underline hover:text-red-600 transition-colors">Permissions & Access</Link>
+        <Link to="/troubleshooting/permissions" className="text-inherit no-underline hover:text-red-600 transition-colors">Workout related Queries</Link>
       </div>
     </div>
-    <p className="text-gray-600 text-sm">Fix issues related to users, roles, and permissions.</p>
-  </div>
+    <p className="text-gray-600 text-sm">Have questions about the workouts? Check here</p>
+  </Link>
 
-  <div className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+  <Link to="/troubleshooting/databases" style={{transition: 'all 0.5s ease'}} className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
 
     <div className="flex items-center mb-3">
       <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mr-4 group-hover:bg-green-100 transition-colors">
         <span className="material-icons text-green-600 text-xl">folder</span>
       </div>
       <div className="text-lg font-bold text-gray-900 m-0">
-        <Link to="/troubleshooting/databases" className="text-inherit no-underline hover:text-green-600 transition-colors">Database Issues</Link>
+        <Link to="/troubleshooting/databases" className="text-inherit no-underline hover:text-green-600 transition-colors">Report related queries</Link>
       </div>
     </div>
-    <p className="text-gray-600 text-sm">Troubleshoot database errors and connection problems.</p>
-  </div>
+    <p className="text-gray-600 text-sm">Problems in your report? Click here for better understanding</p>
+  </Link>
 
-  <div className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+  <Link to="/troubleshooting/databases" style={{transition: 'all 0.5s ease'}} className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
     <div className="flex items-center mb-3">
       <div className="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center mr-4 group-hover:bg-purple-100 transition-colors">
         <span className="material-icons text-purple-600 text-xl">collections</span>
       </div>
       <div className="text-lg font-bold text-gray-900 m-0">
-        <Link to="/troubleshooting/media" className="text-inherit no-underline hover:text-purple-600 transition-colors">Media & Files</Link>
+        <Link to="/troubleshooting/media" className="text-inherit no-underline hover:text-purple-600 transition-colors">Miscellaneous</Link>
       </div>
     </div>
-    <p className="text-gray-600 text-sm">Fix problems with images, videos, and file uploads.</p>
-  </div>
+    <p className="text-gray-600 text-sm">Any Other questions and problems with the assessments</p>
+  </Link>
 
-  <div className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+  <Link to="/troubleshooting/databases" style={{transition: 'all 0.5s ease'}} className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
 
     <div className="flex items-center mb-3">
       <div className="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center mr-4 group-hover:bg-indigo-100 transition-colors">
         <span className="material-icons text-indigo-600 text-xl">auto_awesome</span>
       </div>
       <div className="text-lg font-bold text-gray-900 m-0">
-        <Link to="/troubleshooting/ai" className="text-inherit no-underline hover:text-indigo-600 transition-colors">AI Assistance</Link>
+        <Link to="/troubleshooting/ai" className="text-inherit no-underline hover:text-indigo-600 transition-colors">Ask Elitefit</Link>
       </div>
     </div>
-    <p className="text-gray-600 text-sm">Get help when AI features don't work as expected.</p>
-  </div>
-
-   <div className="group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-
-    <div className="flex items-center mb-3">
-      <div className="w-12 h-12 rounded-xl bg-amber-50 flex items-center justify-center mr-4 group-hover:bg-amber-100 transition-colors">
-        <span className="material-icons text-amber-600 text-xl">diversity_3</span>
-      </div>
-      <div className="text-lg font-bold text-gray-900 m-0">
-        <Link to="/troubleshooting/members" className="text-inherit no-underline hover:text-amber-600 transition-colors">Members & Guests</Link>
-      </div>
-    </div>
-    <p className="text-gray-600 text-sm">Understand member vs guest roles and access issues.</p>
-  </div>
+    <p className="text-gray-600 text-sm">Didn't find what you were looking for? Talk to us directly</p>
+  </Link>
 
 </div>
 
@@ -95,6 +82,7 @@ import Link from '@docusaurus/Link';
 
     <div className="flex-shrink-0">
       <Link
+      style={{transition: 'all 0.5s ease'}}
         to="/support"
         className="inline-flex m-0 border border-blue-100 hover:border-blue-300 dark:hover:border-gray-500 transition-all duration-300 ease dark:border-gray-700 items-center px-5 py-2.5 bg-blue-600 text-white rounded-lg hover:bg-blue-700 no-underline text-sm font-medium shadow-sm hover:shadow transition-border duration-300"
       >

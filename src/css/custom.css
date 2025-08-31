@@ -436,6 +436,21 @@ iframe{
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
 
+
+.animate-gradient-x {
+  animation: gradient-x 4s ease infinite;
+}
+
+
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
 .button--primary-header:hover {
   background-color: #00a37c;
   color: white;

@@ -43,28 +43,60 @@ export default function Home() {
   return (
       <Layout title="Help Center" description="Step-by-step guides to help you navigate tasks easily">
         <HomepageHeader />
-        <main className="container">
-          <section className={styles.section}>
-            <Heading as="h2">Explore Topics</Heading>
-            <p>Select a category to find detailed guides and solutions.</p>
-            <div className={styles.grid}>
-              <Link className={styles.card} to="/get-started/Welcome">
-                <h3>Getting Started</h3>
-                <p>Learn the basics and set up quickly.</p>
+        <main className="container" style={{padding: '5rem'}}>
+          <section className="text-center">
+            <div className="font-bold text-gray-900 hero__title">Explore Topics</div>
+            <p className="hero__subtitle">Select a category to find detailed guides and solutions.</p>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+
+              <Link to="/get-started/Welcome" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-center mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center mr-4 group-hover:bg-blue-100 transition-colors">
+                    <span className="material-icons text-blue-600 text-xl">import_contacts</span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-900 m-0">
+                    <Link to="/get-started/Welcome" className="text-inherit no-underline hover:text-blue-600 transition-colors">Getting Started</Link>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm">Learn the basics and set up quickly</p>
               </Link>
-              <Link className={styles.card} to="/product-tour/Admin/1userJourney">
-                <h3>Features & Tools</h3>
-                <p>Explore key functionalities and how to use them.</p>
+
+              <Link to="/product-tour/Admin/1userJourney" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-center mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-red-50 flex items-center justify-center mr-4 group-hover:bg-red-100 transition-colors">
+                    <span className="material-icons text-red-600 text-xl">settings_suggest</span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-900 m-0">
+                    <Link to="/product-tour/Admin/1userJourney" className="text-inherit no-underline hover:text-red-600 transition-colors">Features & Tools</Link>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm">Explore key functionalities and how to use them</p>
               </Link>
-              <Link className={styles.card} to="/troubleshoot/1submitting_support_requests">
-                <h3>Troubleshooting</h3>
-                <p>Fix common issues with step-by-step solutions.</p>
+
+              <Link to="/troubleshoot/1submitting_support_requests" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+
+                <div className="flex items-center mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-green-50 flex items-center justify-center mr-4 group-hover:bg-green-100 transition-colors">
+                    <span className="material-icons text-green-600 text-xl">build</span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-900 m-0">
+                    <Link to="/troubleshoot/1submitting_support_requests" className="text-inherit no-underline hover:text-green-600 transition-colors">Troubleshooting Tips</Link>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm">Fix common issues with step-by-step solutions</p>
               </Link>
-              <Link className={styles.card} to="/FAQs/FAQs1">
-                <h3>FAQs</h3>
-                <p>Find answers to frequently asked questions.</p>
-              </Link>
-            </div>
+
+              <Link to="/FAQs/FAQs1" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-white hover:border-blue-100 dark:hover:border-blue-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-center mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-purple-50 flex items-center justify-center mr-4 group-hover:bg-purple-100 transition-colors">
+                    <span className="material-icons text-purple-600 text-xl">help_center</span>
+                  </div>
+                  <div className="text-lg font-bold text-gray-900 m-0">
+                    <Link to="/FAQs/FAQs1" className="text-inherit no-underline hover:text-purple-600 transition-colors">FAQs</Link>
+                  </div>
+                </div>
+                <p className="text-gray-600 text-sm">Find answers to frequently asked questions</p>
+              </Link></div>
           </section>
         </main>
       </Layout>
