@@ -1,0 +1,219 @@
+# Movement
+
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import Link from "@docusaurus/Link";
+import { useLocation } from "@docusaurus/router";
+
+{(() => {
+  const questions = [
+                      {
+                        id: 3,
+                        question: "Why is my stickfigure flickering during the movement?",
+                        icon: "help_outline",
+                        answer: [
+                          "The stickfigure flickering could be due to multiple reasons:",
+                        ],
+                        list: [
+
+                          "• Ensure your background is clutter-free.",
+                          "• Wear bright, tight-fit clothes—loose clothing can lead to tracking errors.",
+                          "• Use a decent quality camera.",
+                          "• Make sure you are fully visible to the camera from head to toe."
+                        ],
+                        tips: [
+                          "Position yourself in a well-lit room for better tracking.",
+                          "Stand at a suitable distance so your whole body fits in the frame."
+                        ],
+                        cautions: [
+                          "Avoid dim or uneven lighting—it can confuse the camera.",
+                          "Do not wear baggy or dark clothes as it reduces tracking accuracy."
+                        ]
+                      },
+                      {
+                        id: 4,
+                        question: "What kind of equipment do I need for the movements?",
+                        icon: "help_outline",
+                        answer: [
+                          "No specific equipment is required for most movements.",
+                          "Some movements may require simple utilities like a chair."
+                        ],
+                        tips: [
+                          "Keep a chair or sturdy support nearby for balance-focused exercises.",
+                          "Wear comfortable shoes or go barefoot depending on the movement."
+                        ],
+                        cautions: [
+                          "Do not use unstable furniture as movement support.",
+                          "Ensure the movement area is safe and free from obstacles."
+                        ]
+                      },
+                      {
+                        id: 5,
+                        question: "How long does it take to complete an entire assessment?",
+                        icon: "help_outline",
+                        answer: [
+                          "An assessment usually takes 8 to 13 minutes:",
+                        ],
+                        list: [
+
+                          "• 5–7 minutes for answering all questions.",
+                          "• 3–5 minutes to complete the movements."
+                        ],
+                        tips: [
+                          "Ensure you are in a distraction-free environment before starting.",
+                          "Have a bottle of water nearby in case you need a quick break."
+                        ],
+                        cautions: [
+                          "Avoid rushing through the assessment—accuracy matters.",
+                          "Do not pause midway unless absolutely necessary as it may reset progress."
+                        ]
+                      }
+                    ]
+
+
+
+
+  // Grab query param "id"
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  const [activeId, setActiveId] = useState(id);
+  const history = useHistory();
+
+    const handleBack = () => {
+      history.goBack(); // same as navigate(-1)
+    };
+
+  if (id) {
+    const q = questions.find((q) => +q.id === +id);
+    if (!q) return <p className="text-gray-600">Question not found.</p>;
+
+    // Full QnA page (not drawer)
+    return (
+      <div>
+
+      <div className=" relative w-full h-0 flex flex-col items-end justify-start rounded-lg">
+
+            {/* Tailwind Back Button */}
+            <button
+              onClick={handleBack}
+              className="absolute font-semibold text-green-600 dark:text-green-50 cursor-pointer text-sm right-4 -translate-y-full flex items-center justify-center px-6 py-2 rounded-xl shadow-md bg-green-50 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-green-100 dark:hover:bg-gray-600 transition-all duration-300"
+                style={{top: '-10px'}}
+                >
+              <span className="material-icons text-green-600 dark:text-green-50" style={{fontSize: "1rem"}}>
+                          arrow_back_ios
+                        </span> Back
+            </button>
+          </div>
+
+
+        {/* Question */}
+        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+          {q.question}
+        </h2>
+
+        {/* Answer paragraphs */}
+        <div className="space-y-4 text-gray-700 dark:text-gray-300 text-left mb-6">
+          {q.answer.map((para, idx) => (
+            <p key={idx} className="leading-relaxed">
+              {para}
+            </p>
+          ))}
+        </div>
+
+        {/* Professional Nested List */}
+        {q.list && (
+          <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700">
+            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+              {q.list.map((item, idx) =>
+                typeof item === "string" ? (
+                  <li key={idx} className="font-medium mt-3">
+                    {item}
+                  </li>
+                ) : Array.isArray(item) ? (
+                  <ul
+                    key={idx}
+                    className="ml-6 list-decimal space-y-1 text-gray-600 dark:text-gray-400"
+                  >
+                    {item.map((subItem, subIdx) => (
+                      <li key={subIdx} className="leading-relaxed">
+                        {subItem}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null
+              )}
+            </ul>
+          </div>
+        )}
+
+
+
+        {/* Tips */}
+        {q.tips && (
+          <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900 rounded-lg border-l-4 border-blue-500">
+            <h3 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">
+              Tips
+            </h3>
+            <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+              {q.tips.map((tip, idx) => (
+                <li key={idx}>{tip}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Cautions */}
+        {q.cautions && (
+          <div className="mt-6 p-4 bg-red-50 dark:bg-red-900 rounded-lg border-l-4 border-red-500">
+            <h3 className="font-semibold text-red-700 dark:text-red-300 mb-2">
+              Cautions
+            </h3>
+            <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+              {q.cautions.map((caution, idx) => (
+                <li key={idx}>{caution}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    );
+  }else{
+  return (
+      <div className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+        {questions.map((q) => (
+          <div key={q.id}>
+            {/* Question header */}
+            <button
+              onClick={() => setActiveId(activeId === q.id ? null : q.id)}
+              className="w-full flex items-center justify-between p-4 cursor-pointer hover:bg-green-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+            >
+              <span className="text-gray-900 dark:text-gray-100 font-medium group-hover:text-green-600 transition-colors">
+                {q.question}
+              </span>
+              <span className="material-icons text-gray-400 group-hover:text-green-600 transition-colors">
+                {activeId === q.id ? "expand_less" : "chevron_right"}
+              </span>
+            </button>
+
+            {/* Drawer content */}
+            {activeId === q.id && (
+              <div className="mt-4 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                {/* Short preview of answer */}
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  {q.answer[0]}
+                </p>
+                <Link
+                  to={`?id=${q.id}`}
+                  className="text-green-600 hover:underline font-medium"
+                >
+                  Read full answer →
+                </Link>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  }
+})()}

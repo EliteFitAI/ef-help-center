@@ -154,7 +154,6 @@ a p{
 /* Link Styling */
 a {
   text-decoration: none;
-  background-color: transparent;
 }
 
 a:hover {
@@ -170,6 +169,10 @@ a:hover {
 .social-logo a {
   display: inline-block;
   width: 20px;
+}
+
+.menu__link--sublist-caret::after{
+  background: var(--ifm-menu-link-sublist-icon) 50% / 24px 24px;
 }
 
 .social-logo img {

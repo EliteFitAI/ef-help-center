@@ -58,8 +58,29 @@ const sidebars = {
           items: [
             'product-tour/Assessments/Assessment',
             'product-tour/Assessments/Troubleshoot',
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Login',
+              className: 'ml-2', // add margin-left
+            },
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Workout',
+              className: 'ml-2',
+            },
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Report',
+              className: 'ml-2',
+            },
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Miscellaneous',
+              className: 'ml-2',
+            },
           ],
-        },
+        }
+
       ],
     },
     {
