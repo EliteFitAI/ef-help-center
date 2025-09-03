@@ -60,7 +60,7 @@ const config = {
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
+          customCss: require.resolve('./src/css/custom.css'),
         },
       }),
     ],
@@ -71,6 +71,12 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true, // Respects user's system preference
+      },
+      metadata: [
+        { name: 'algolia-site-verification', content: '2060A96D4D652C3A' },
+      ],
       navbar: {
         title: 'EliteFit.AI',
         logo: {
@@ -133,7 +139,6 @@ const config = {
             items: [
               { label: 'Healthcare', to: 'https://www.elitefitforyou.com/healthcare' },
               { label: 'Fitness/Yoga', to: 'https://www.elitefitforyou.com/fitness' },
-              { label: 'Sports', to: 'https://www.elitefitforyou.com/sports' },
               { label: 'Insurance', to: 'https://www.elitefitforyou.com/insurance' },
               { label: 'Public Sector', to: 'https://www.elitefitforyou.com/publicsector' },
             ],
