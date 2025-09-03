@@ -1,4 +1,4 @@
-# Starting Workouts
+# Starting workouts
 
 Getting started with your workout is simple. Below are answers to common questions to help you optimize your experience.
 

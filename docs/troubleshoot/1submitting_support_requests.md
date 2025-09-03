@@ -1,11 +1,11 @@
-# Submitting Support Request
+# Submitting support request
 
-## Access the Support Form
+## Access the support form
 1. Log in to your account
 2. Locate and click the **"Help & Support"** button in the sidebar menu
 3. Select **"Support Ticket"** or **"Raise a Request"** from the options
 
-## Complete the Form Fields
+## Complete the form fields
 
 **Name**
 - Enter your full legal name  
@@ -15,30 +15,30 @@
 - Provide a valid, monitored email address  
   Example: `jane.smith@company.com`
 
-**Phone Number**
+**Phone number**
 - Include country code and number  
   Example: `+1 555 123 4567`
 
-**Type of User**
+**Type of user**
 - Select your user type from dropdown:
-    - Individual User
-    - Corporate User
+    - Individual user
+    - Corporate user
     - Administrator
     - Other (specify)
 
-**Type of Issue**
+**Type of issue**
 - Choose the most relevant category:
-    - Technical Issue
+    - Technical issue
     - Billing/Payment
-    - Account Access
-    - Content Related
+    - Account access
+    - Content related
     - Other
 
 **Subject**
 - Brief summary of your issue (50 characters max)  
   Example: `"Video upload failing with error 404"`
 
-## Detailed Description
+## Detailed description
 Provide comprehensive details about your issue:
 - What you were trying to do
 - Exact error messages received
@@ -49,7 +49,7 @@ Provide comprehensive details about your issue:
 
 
 ## Attachments
-- Click **"Choose File"** or drag files to upload:
+- Click **"Choose file"** or drag files to upload:
     - Error message screenshots
     - System logs
     - Video/image examples demonstrating the issue
@@ -60,13 +60,13 @@ Provide comprehensive details about your issue:
 2. Click **"Submit"** button
 3. Note your ticket number from the confirmation screen
 
-## After Submission
+## After submission
 - You'll receive a confirmation email within 15 minutes
 - Typical response time: 1-2 business days
 - Check your spam folder if no confirmation arrives
 - To check ticket status, revisit the Support section
 
-## Troubleshooting Tips
+## Troubleshooting tips
 If you are not able to submit the form:
 - Ensure all required fields (marked with *) are completed
 - Try refreshing the page

@@ -1,10 +1,10 @@
-# User Journey
+# User journey
 
-Welcome to the EliteFit.AI Physiotherapy Program help center. This guide will walk you through the user journey for patients and physiotherapy admins using our platform.
+Welcome to the EliteFit.AI physiotherapy program help center. This guide will walk you through the user journey for patients and physiotherapy admins using our platform.
 
 ---
 
-## 🧍‍♀️ User Flow for Patients
+## 🧍‍♀️ User flow for patients
 
 Follow these steps to get started with your workouts:
 
@@ -13,7 +13,7 @@ Follow these steps to get started with your workouts:
 
 ---
 
-## 🩺 Physiotherapy Program Workflow
+## 🩺 Physiotherapy program workflow
 
 Understand the entire workflow from EliteFit.AI to patients and physiotherapists:
 
@@ -22,8 +22,8 @@ Understand the entire workflow from EliteFit.AI to patients and physiotherapists
 ![Physiotherapymobile](/img/workflow4.webp)
 
 - **EliteFit.AI** sets up the platform and sends sign-up links to admins.
-- **Physio Admins** log in, configure programs, and monitor reports.
-- **Physio Patients** sign up, set up their profile, follow assigned programs, and view progress.
+- **Physio admins** log in, configure programs, and monitor reports.
+- **Physio patients** sign up, set up their profile, follow assigned programs, and view progress.
 
 
 If you have questions or need further assistance, please reach out to your physiotherapy provider or contact our support team.

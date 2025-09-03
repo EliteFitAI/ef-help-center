@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import Link from "@docusaurus/Link";
 import { useLocation } from "@docusaurus/router";
+import myImage from '@site/static/img/Assessment1.webp';
 
 {(() => {
   const questions = [
@@ -56,6 +57,7 @@ import { useLocation } from "@docusaurus/router";
                         id: 14,
                         question: "Can I continue my assessments later? Would that lose all my progress?",
                         icon: "help_outline",
+                        img: myImage,
                         answer: [
                           "You can continue your assessment anytime by scrolling down to the 'Resume your assessment' section.",
                           "Here you can see all your currently incomplete assessments and continue them anytime."
@@ -112,6 +114,9 @@ import { useLocation } from "@docusaurus/router";
         <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
           {q.question}
         </h2>
+
+        {/* Image */}
+        <img src={q.img} className="my-2 w-[100%] object-contain" />
 
         {/* Answer paragraphs */}
         <div className="space-y-4 text-gray-700 dark:text-gray-300 text-left mb-6">

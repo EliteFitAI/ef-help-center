@@ -1,21 +1,21 @@
-# Admin Login
+# Admin login
 
 Sign in to the EliteFit.AI admin portal to securely manage users, monitor workout progress, and oversee platform performance—all in one place.
 
 ## Sign In Page
 
-Below is the login screen for the EliteFit.AI Admin Dashboard. 
+Below is the login screen for the EliteFit.AI admin dashboard. 
 
 ![Admin Login - Enter your credentials](/img/Login.webp)
 
-➡️ **Step:** On the login page, add your admin credentials in the **Email** and **Password** fields as shown above.
+➡️ **Step:** On the login page, add your admin credentials in the **email** and **password** fields as shown above.
 
 - Use your registered admin email address.
 - Enter your password.
-- Click the green **Login** button to proceed.
+- Click the green **login** button to proceed.
 
 If needed, you can also choose to:
-- Login with **Google**
+- Login with **google**
 - Login with **OTP**
 - Reset your password using the **Forgot Password?** link.
 

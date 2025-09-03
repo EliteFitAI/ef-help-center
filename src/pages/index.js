@@ -53,38 +53,38 @@ export default function Home() {
               <Link to="/get-started/Welcome" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-3">
                   <div className="text-lg font-bold text-gray-900 m-0">
-                    <Link to="/get-started/Welcome" className="text-inherit no-underline hover:text-blue-600 transition-colors">Getting Started</Link>
+                    <Link to="/get-started/Welcome" className="text-inherit no-underline hover:text-blue-600 transition-colors">Getting started</Link>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm">Learn the basics and set up quickly</p>
+                <p className="text-gray-600 text-sm">Learn the basics and set up quickly.</p>
               </Link>
 
-              <Link to="/product-tour/Admin/1userJourney" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-100 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Link to="/product-tour/Admin/1userJourney" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-3">
                   <div className="text-lg font-bold text-gray-900 m-0">
-                    <Link to="/product-tour/Admin/1userJourney" className="text-inherit no-underline hover:text-red-600 transition-colors">Features & Tools</Link>
+                    <Link to="/product-tour/Admin/1userJourney" className="text-inherit no-underline hover:text-red-600 transition-colors">Features & tools</Link>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm">Explore key functionalities and how to use them</p>
+                <p className="text-gray-600 text-sm">Explore key functionalities and how to use them.</p>
               </Link>
 
-              <Link to="/troubleshoot/1submitting_support_requests" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-100 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Link to="/troubleshoot/1submitting_support_requests" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
 
                 <div className="flex items-center mb-3">
                   <div className="text-lg font-bold text-gray-900 m-0">
-                    <Link to="/troubleshoot/1submitting_support_requests" className="text-inherit no-underline hover:text-green-600 transition-colors">Troubleshooting Tips</Link>
+                    <Link to="/troubleshoot/1submitting_support_requests" className="text-inherit no-underline hover:text-green-600 transition-colors">Troubleshooting tips</Link>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm">Fix common issues with step-by-step solutions</p>
+                <p className="text-gray-600 text-sm">Fix common issues with step-by-step solutions.</p>
               </Link>
 
-              <Link to="/FAQs/FAQs1" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-100 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Link to="/FAQs/FAQs1" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-3">
                   <div className="text-lg font-bold text-gray-900 m-0">
                     <Link to="/FAQs/FAQs1" className="text-inherit no-underline hover:text-purple-600 transition-colors">FAQs</Link>
                   </div>
                 </div>
-                <p className="text-gray-600 text-sm">Find answers to frequently asked questions</p>
+                <p className="text-gray-600 text-sm">Find answers to frequently asked questions.</p>
               </Link></div>
           </section>
         </main>
