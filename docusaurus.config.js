@@ -36,7 +36,10 @@ const config = {
     locales: ['en'],
   },
 
-  clientModules: [require.resolve('./src/ClientModules/ScrollToCenter.js')],
+  clientModules: [
+    require.resolve('./src/ClientModules/ScrollToCenter.js'),
+    require.resolve('./src/ClientModules/SearchEnhancer.js'),
+  ],
 
   presets: [
     [
@@ -184,23 +187,38 @@ const config = {
       // },
     }),
 
-  plugins: [
-    [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        indexDocs: true,
-        indexBlog: true,
-        indexPages: true,
-        language: ['en'],
-        removeDefaultStemmer: true,          // partial words
-        fuzzyMatchingDistance: 1,            // typos
-        highlightSearchTermsOnTargetPage: true,
-        searchResultLimits: 10,
-        searchResultContextMaxLength: 80,
-      },
+    plugins: [
+      [
+        require.resolve('@easyops-cn/docusaurus-search-local'),
+        {
+          hashed: true,
+          indexDocs: true,
+          indexPages: true,
+          language: ['en'],
+    
+          removeDefaultStemmer: true,           // no stemming
+          removeDefaultStopWordFilter: true,    // keep short words like "id"
+          fuzzyMatchingDistance: 0,             // no typos
+
+          highlightSearchTermsOnTargetPage: true,
+          searchResultLimits: 8,
+          searchResultContextMaxLength: 120,
+          explicitSearchResultPath: true,
+          docsRouteBasePath: '/',
+          useAllContextsWithNoSearchContext: true,
+    
+          searchBarShortcut: true,
+          searchBarPosition: 'right',
+          docsPluginIdForPreferredVersion: 'default',
+          indexBlog: false,
+    
+          searchContextByPaths: [],
+          ignoreFiles: [],
+          searchBarShortcutHint: false,
+        },
+      ],
     ],
-  ],
+    
 };
 
 export default config;
