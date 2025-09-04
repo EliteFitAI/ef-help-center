@@ -1,0 +1,201 @@
+# Login setup
+
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
+import Link from "@docusaurus/Link";
+import { useLocation } from "@docusaurus/router";
+import myImage from '@site/static/img/Assessment3.webp';
+
+{(() => {
+  const questions = [
+                      {
+                        id: 1,
+                        question: "I cannot log into my account",
+                        icon: "help_outline",
+                        answer: [
+                          "If you forgot your password, contact your administrator or physiotherapist.",
+                          "If you face any other login issues, try performing a hard refresh and ensure you are not logged in on another tab.",
+                          ],
+                          list: [
+                          "Steps to hard refresh:",
+                               [ "On laptop/PC, hold the Shift key and click the refresh button on your browser, or open 'Developer Tools' (F12), right click the refresh icon, and select 'Empty cache and hard reload'.",
+                                "If your issue persists, take a screenshot and report it via the support ticket along with your user credentials."
+                              ]
+                          ],
+                        tips: [
+                          "Ensure your internet connection is stable before logging in.",
+                          "Try logging in with a different browser if the issue persists."
+                        ],
+                        cautions: [
+                          "Do not share your password with anyone.",
+                          "Only submit credentials via the official support portal."
+                        ]
+                      },
+                      {
+                        id: 2,
+                        question: "Where can I edit my profile details?",
+                        icon: "help_outline",
+                        img: myImage,
+                        answer: [
+                          "To edit your profile details, click on your profile (the icon on top right corner) and select 'Edit Profile'.",
+                          "You will be directed to the edit profile page where you can update your contact number, weight, height, and password."
+                        ],
+                        tips: [
+                          "Keep your contact number updated to ensure smooth communication.",
+                          "Update your physical details regularly for more accurate recommendations."
+                        ],
+                        cautions: [
+                          "Ensure your password is strong and not reused from other accounts.",
+                          "Do not enter incorrect information as it may affect your progress tracking."
+                        ]
+                      }
+                    ]
+
+
+
+  // Grab query param "id"
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const id = params.get("id");
+  const [activeId, setActiveId] = useState(id);
+  const history = useHistory();
+
+    const handleBack = () => {
+      history.goBack(); // same as navigate(-1)
+    };
+
+  if (id) {
+    const q = questions.find((q) => +q.id === +id);
+    if (!q) return <p className="text-gray-600">Question not found.</p>;
+
+    // Full QnA page (not drawer)
+    return (
+      <div>
+
+      <div className=" relative w-full h-0 flex flex-col items-end justify-start rounded-lg">
+
+            {/* Tailwind Back Button */}
+            <button
+              onClick={handleBack}
+              className="absolute font-semibold text-green-600 dark:text-green-50 cursor-pointer text-sm right-4 -translate-y-full flex items-center justify-center px-6 py-2 rounded-xl shadow-md bg-green-50 dark:bg-gray-700 text-gray-700 dark:text-gray-200 hover:bg-green-100 dark:hover:bg-gray-600 transition-all duration-300"
+                style={{top: '-10px'}}
+                >
+              <span className="material-icons text-green-600 dark:text-green-50" style={{fontSize: "1rem"}}>
+                          arrow_back_ios
+                        </span> Back
+            </button>
+          </div>
+
+        {/* Question */}
+        <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
+          {q.question}
+        </h2>
+
+        {/* Image */}
+        <img src={q.img} className="my-2 w-[100%] object-contain" />
+
+        {/* Answer paragraphs */}
+        <div className="space-y-4 text-gray-700 dark:text-gray-300 text-left mb-6">
+          {q.answer.map((para, idx) => (
+            <p key={idx} className="leading-relaxed">
+              {para}
+            </p>
+          ))}
+        </div>
+
+        {/* Professional Nested List */}
+        {q.list && (
+          <div className="mt-6 p-4 bg-gray-50 dark:bg-gray-900 rounded-xl border border-gray-200 dark:border-gray-700">
+            <ul className="space-y-3 text-gray-700 dark:text-gray-300">
+              {q.list.map((item, idx) =>
+                typeof item === "string" ? (
+                  <li key={idx} className="font-medium mt-3">
+                    {item}
+                  </li>
+                ) : Array.isArray(item) ? (
+                  <ul
+                    key={idx}
+                    className="ml-6 list-decimal space-y-1 text-gray-600 dark:text-gray-400"
+                  >
+                    {item.map((subItem, subIdx) => (
+                      <li key={subIdx} className="leading-relaxed">
+                        {subItem}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null
+              )}
+            </ul>
+          </div>
+        )}
+
+
+
+        {/* Tips */}
+        {q.tips && (
+          <div className="mt-6 p-4 bg-blue-50 dark:bg-blue-900 rounded-lg border-l-4 border-blue-500">
+            <h3 className="font-semibold text-blue-700 dark:text-blue-300 mb-2">
+              Tips
+            </h3>
+            <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+              {q.tips.map((tip, idx) => (
+                <li key={idx}>{tip}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Cautions */}
+        {q.cautions && (
+          <div className="mt-6 p-4 bg-red-50 dark:bg-red-900 rounded-lg border-l-4 border-red-500">
+            <h3 className="font-semibold text-red-700 dark:text-red-300 mb-2">
+              Cautions
+            </h3>
+            <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
+              {q.cautions.map((caution, idx) => (
+                <li key={idx}>{caution}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    );
+  }else{
+  return (
+      <div className="flex flex-col divide-y divide-gray-200 dark:divide-gray-700">
+        {questions.map((q) => (
+          <div key={q.id}>
+            {/* Question header */}
+            <button
+              onClick={() => setActiveId(activeId === q.id ? null : q.id)}
+              className="w-full flex items-center justify-between p-4 cursor-pointer hover:bg-green-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+            >
+              <span className="text-gray-900 dark:text-gray-100 font-medium group-hover:text-green-600 transition-colors">
+                {q.question}
+              </span>
+              <span className="material-icons text-gray-400 group-hover:text-green-600 transition-colors">
+                {activeId === q.id ? "expand_less" : "chevron_right"}
+              </span>
+            </button>
+
+            {/* Drawer content */}
+            {activeId === q.id && (
+              <div className="mt-4 p-4 rounded-lg border border-gray-200 dark:border-gray-700">
+                {/* Short preview of answer */}
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  {q.answer[0]}
+                </p>
+                <Link
+                  to={`?id=${q.id}`}
+                  className="text-green-600 hover:underline font-medium"
+                >
+                  Read full answer →
+                </Link>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  }
+})()}

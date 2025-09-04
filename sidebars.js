@@ -8,6 +8,7 @@ const sidebars = {
     },
     {
       type: 'category',
+      className: 'new-featurep',
       label: 'Product Tour',
       items: [
         {
@@ -50,11 +51,41 @@ const sidebars = {
             'product-tour/User/5otherFeatures',
           ],
         },
+        {
+          type: 'category',
+          label: 'Assessments',
+          className: 'new-featurep',
+          items: [
+            'product-tour/Assessments/Assessment',
+            'product-tour/Assessments/Troubleshoot',
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Login',
+              className: 'ml-2', // add margin-left
+            },
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Workout',
+              className: 'ml-2',
+            },
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Report',
+              className: 'ml-2',
+            },
+            {
+              type: 'doc',
+              id: 'product-tour/Assessments/Miscellaneous',
+              className: 'ml-2',
+            },
+          ],
+        }
+
       ],
     },
     {
       type: 'category',
-      label: 'Troubleshoot',
+      label: 'Troubleshooting Tips',
       items: [
         'troubleshoot/1submitting_support_requests',
         'troubleshoot/Requirements',

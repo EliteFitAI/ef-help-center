@@ -20,15 +20,18 @@
     "@docusaurus/theme-search-algolia": "^3.8.1",
     "@easyops-cn/docusaurus-search-local": "^0.52.1",
     "@mdx-js/react": "^3.0.0",
+    "@tailwindcss/vite": "^4.1.12",
     "clsx": "^2.0.0",
     "dotenv": "^17.0.1",
     "prism-react-renderer": "^2.3.0",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.7.0",
-    "@docusaurus/types": "3.7.0"
+    "@docusaurus/types": "3.7.0",
+    "@tailwindcss/postcss": "^4.1.12"
   },
   "browserslist": {
     "production": [

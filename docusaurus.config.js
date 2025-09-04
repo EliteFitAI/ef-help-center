@@ -24,13 +24,24 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   // organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'helpcenter', // Usually your repo name.
-
+  stylesheets: [
+    {
+      href: "https://fonts.googleapis.com/icon?family=Material+Icons",
+      type: "text/css",
+    },
+  ],
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  headTags: [
+    {
+      tagName: 'link',
+      attributes: {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css',
+      },
+    },
+  ],
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -74,9 +85,6 @@ const config = {
       colorMode: {
         respectPrefersColorScheme: true, // Respects user's system preference
       },
-      metadata: [
-        { name: 'algolia-site-verification', content: '2060A96D4D652C3A' },
-      ],
       navbar: {
         title: 'EliteFit.AI',
         logo: {
@@ -91,10 +99,34 @@ const config = {
             position: 'left',
             label: 'Help Center',
           },
+
+          {
+            type: 'html',
+            position: 'right',
+            value: `<a
+                  class="hero-button button--primary-header pulse new-feature"
+                  href="/product-tour/Assessments/Assessment"
+              >
+                <span>Explore Assessments</span>
+              </a>`
+          },
+
           {
             type: 'docsVersionDropdown',
             versions: ['current', '1.0'],
           },
+          // {
+          //   type: 'html',
+          //   position: 'right',
+          //   value: `
+          //   <a
+          //         class="hero-button button--primary-header"
+          //         href="/product-tour/Assessments/Assessment#ready-to-begin"
+          //     >
+          //       <span>Assessments</span>
+          //     </a>
+          // `,
+          // },
           // {
           //   href: 'https://github.com/facebook/docusaurus',
           //   label: 'GitHub',
@@ -183,7 +215,6 @@ const config = {
       //   searchPagePath: 'search',
       // },
     }),
-
   plugins: [
     [
       require.resolve('@easyops-cn/docusaurus-search-local'),
@@ -200,6 +231,7 @@ const config = {
         searchResultContextMaxLength: 80,
       },
     ],
+      './postcss.config.js'
   ],
 };
 
