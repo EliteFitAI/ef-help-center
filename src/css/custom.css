@@ -59,6 +59,17 @@ a p{
   margin: 0;
 }
 
+ol > li::marker {
+   content: counter(list-item) ".  ";
+   font-weight: 600;
+    font-size: 0.9rem;
+   color: #374151;
+ }
+
+ul{
+  list-style: disc;
+}
+
 .ef-footer .ef-footer-logo img {
   width: 40px;
   margin-bottom: 10px;
@@ -190,6 +201,10 @@ img[alt=Physiotherapytab1] {display: none}
 img[alt=Physiotherapymobile] {display: none}
 img[alt='User Flow for Assessments'] {display: block}
 img[alt='User Flow for Assessments Mob'] {display: none}
+img[alt='Admin User Management'] {
+  height: 500px;
+  object-fit: contain;
+}
 
 .boldText {
   font-size: large;
