@@ -201,7 +201,8 @@ img[alt=Physiotherapytab1] {display: none}
 img[alt=Physiotherapymobile] {display: none}
 img[alt='User Flow for Assessments'] {display: block}
 img[alt='User Flow for Assessments Mob'] {display: none}
-img[alt='Admin User Management'] {
+img[alt='Admin User Management'],
+img[alt='EliteFit.AI Library']{
   height: 500px;
   object-fit: contain;
 }

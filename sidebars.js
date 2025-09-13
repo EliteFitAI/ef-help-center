@@ -24,7 +24,7 @@ const sidebars = {
                   label: 'Admin Portal',
                   items: [
                     'product-tour/Fitness/Admin/Admin Portal/4addingUsers',
-                    // 'product-tour/Admin/Admin Portal/5viewingLibrary',
+                    'product-tour/Fitness/Admin/Admin Portal/5viewingLibrary',
                     // 'product-tour/Admin/Admin Portal/6assigningProgram',
                     // 'product-tour/Admin/Admin Portal/7analyticsReports',
                     // 'product-tour/Admin/Admin Portal/8otherFeatures',
@@ -71,7 +71,7 @@ const sidebars = {
                   label: 'Admin Portal',
                   items: [
                     'product-tour/Physiotherapy/Admin/Admin Portal/4addingUsers',
-                    // 'product-tour/Admin/Admin Portal/5viewingLibrary',
+                    'product-tour/Physiotherapy/Admin/Admin Portal/5viewingLibrary',
                     // 'product-tour/Admin/Admin Portal/6assigningProgram',
                     // 'product-tour/Admin/Admin Portal/7analyticsReports',
                     // 'product-tour/Admin/Admin Portal/8otherFeatures',
