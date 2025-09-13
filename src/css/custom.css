@@ -202,7 +202,9 @@ img[alt=Physiotherapymobile] {display: none}
 img[alt='User Flow for Assessments'] {display: block}
 img[alt='User Flow for Assessments Mob'] {display: none}
 img[alt='Admin User Management'],
-img[alt='EliteFit.AI Library']{
+img[alt='EliteFit.AI Library'],
+img[alt='Treatment plan page'],
+img[alt='Program page']{
   height: 500px;
   object-fit: contain;
 }

@@ -1,65 +1,68 @@
-# Assigning treatment plan
+import Admonition from '@theme/Admonition';
 
-This document will walk you through the steps required to create and assign a treatment plan to users.
+# Program
 
----
-
-## Create treatment plan button
-
-<div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
-
-<div style={{ flex: 1, minWidth: '250px' }}>
-
-1. Click on **Treatment Plan** on the left panel.   
-
-</div>
-
-<div style={{ flex: 1, minWidth: '250px' }}>
-
-![Treatment plan page](/img/Treatmentplan.webp)
-
-</div>
-</div>
-
-<div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
-
-<div style={{ flex: 1, minWidth: '400px', width: '400px' }}>
-
-![Treatment plan section](/img/Treatmentplan2.webp) 
-
-</div>
-
-<div style={{ minWidth: '200px', width: '300px' }}>
-
-2. Click on **“+ Create Treatment Plan”** on the right side of the treatment plan page.
-
-</div>
-
-</div>
+The *Program* feature allows admins to create, customize, and assign exercises to users.
 
 ---
 
-## Create treatment plan page
+## Access program
+    1. Go to the left panel.
+    1. Click on *Programs*.
 
-<div style={{ display: 'flex', alignItems: 'center', gap: '2rem', flexWrap: 'wrap' }}>
+![Program page](/img/Program1.webp)
 
-<div style={{ flex: 1, minWidth: '250px' }}>
+## Create a new program
+    On the top right corner, click the green button labeled *Create Program*.
 
-After clicking on the **Create Treatment Plan** icon, follow the steps below to complete and assign the treatment plan:
+## Program details & schedule
+    A form will appear. Enter the following details:
+        1. **Name**: Enter a name for program.
+        1. **Description**: Enter a description for program.
 
-1. **Choose the user** to assign the treatment plan to from the dropdown list.  
-2. **Enter the name** of the treatment plan (example: posture correction plan).
-3. **Select the start date** for the treatment plan.  
-4. **Select the end date** for the treatment plan.  
-5. **Choose the treatment plan type** (daily or weekly).
-6. **Search and add exercises**, then set the number of sets and duration for each.  
-7. Click the **"Assign"** button to finalize and assign the treatment plan. 
+![Program page](/img/Program2.webp)
 
-</div>
+        3. **Days**: Enter the number of days for program.
+        4. **Thumbnail**: Upload an image from your system for program.
 
-<div style={{ flex: 1, minWidth: '250px' }}>
+![Program page](/img/Program3.webp)
 
-![Treatment plan page](/img/Treatmentplan4.webp)
+## Program videos
+    Under *Program Videos*, search for exercises by keyword (e.g., abs workout) and select as many exercises as required.
 
-</div>
-</div>
+![Program page](/img/Program4.webp)
+
+## Pre-requisite program (optional)
+    Under *Pre-requisite Program*, search for programs by keyword (e.g., 5 days challenge) and select a program required to be completed before.
+
+![Program page](/img/Program4.webp)
+
+<Admonition type="caution" title="Required Program">
+  Make sure the pre-requisite program is assigned and active (if incomplete) before linking it.
+  Otherwise, users may be blocked from starting this program.
+</Admonition>
+
+
+## Program schedule
+    Under *Program Schedule*, enter the following details:
+        1. **Start Date & End Date**: Select the dates from the calendar.
+        1. **Target Audience**: Select the following from the dropdown:
+            - **Individual**: Program will be assigned to the particular user(s).
+            - **Team**: Program will be assigned to the particular team(s),
+            - **All**: Program will be assigned to all the user under the microsite.
+
+![Program page](/img/Program5.webp)
+
+        3. **Users**: If *Individual* is selected this input will appear and the users can be selected individually.
+
+![Program page](/img/Program6.webp)
+
+        4. **Teams**: If *Team* is selected this input will appear and the teams can be selected.
+
+![Program page](/img/Program7.webp)
+
+## Submit the program
+    1. Once all details are filled in, click *Submit*.
+    1. A confirmation message will appear.
+
+![Program page](/img/Program8.webp)

@@ -25,7 +25,7 @@ const sidebars = {
                   items: [
                     'product-tour/Fitness/Admin/Admin Portal/4addingUsers',
                     'product-tour/Fitness/Admin/Admin Portal/5viewingLibrary',
-                    // 'product-tour/Admin/Admin Portal/6assigningProgram',
+                    'product-tour/Fitness/Admin/Admin Portal/6assigningProgram',
                     // 'product-tour/Admin/Admin Portal/7analyticsReports',
                     // 'product-tour/Admin/Admin Portal/8otherFeatures',
                   ],
@@ -72,7 +72,7 @@ const sidebars = {
                   items: [
                     'product-tour/Physiotherapy/Admin/Admin Portal/4addingUsers',
                     'product-tour/Physiotherapy/Admin/Admin Portal/5viewingLibrary',
-                    // 'product-tour/Admin/Admin Portal/6assigningProgram',
+                    'product-tour/Physiotherapy/Admin/Admin Portal/6assigningProgram',
                     // 'product-tour/Admin/Admin Portal/7analyticsReports',
                     // 'product-tour/Admin/Admin Portal/8otherFeatures',
                   ],
