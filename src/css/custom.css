@@ -182,9 +182,9 @@ a:hover {
   width: 20px;
 }
 
-.menu__link--sublist-caret::after{
-  background: var(--ifm-menu-link-sublist-icon) 50% / 24px 24px;
-}
+/*.menu__link--sublist-caret::after{*/
+/*  background: var(--ifm-menu-link-sublist-icon) 50% / 24px 24px;*/
+/*}*/
 
 .social-logo img {
   height: 20px; /* Adjust the size of the icons */
@@ -463,7 +463,7 @@ iframe{
 
 @keyframes gradient-x {
   0%, 100% {
-    background-position: 0% 50%;
+    background-position: 0 50%;
   }
   50% {
     background-position: 100% 50%;
