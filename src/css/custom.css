@@ -207,7 +207,7 @@ img[alt='Admin User Management'],
 img[alt='EliteFit.AI Library'],
 img[alt='Treatment plan page'],
 img[alt='Program page']{
-  height: 500px;
+  max-height: 500px;
   object-fit: contain;
 }
 

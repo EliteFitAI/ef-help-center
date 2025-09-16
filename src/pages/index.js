@@ -48,7 +48,7 @@ export default function Home() {
           <section className="text-center">
             <div className="font-bold text-gray-900 hero__title dark:text-gray-100">Explore Topics</div>
             <p className="hero__subtitle">Select a category to find detailed guides and solutions.</p>
-            <div className="grid grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
 
               <Link to="/get-started/Welcome" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-3">
