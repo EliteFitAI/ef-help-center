@@ -97,7 +97,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Help Center',
+            label: 'Get Started',
           },
 
           {

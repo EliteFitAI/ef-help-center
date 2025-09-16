@@ -24,14 +24,14 @@ function HomepageHeader() {
               Step-by-step guides to help you accomplish every task with ease.
             </p>
 
-            <div className="hero-buttons">
+            {/* <div className="hero-buttons">
               <Link
                   className="hero-button button--secondary"
                   to="/get-started/Welcome"
               >
                 <span>Get Started</span>
               </Link>
-            </div>
+            </div> */}
           </div>
         </div>
       </header>
