@@ -274,6 +274,10 @@ mark {
   background-color: rgba(158, 158, 158, 0.05) !important;
 }
 
+mark[data-markjs=true]{
+  background-color: #73bc445c !important;
+}
+
 /* Dark mode adjustments for quality indicators */
 [data-theme='dark'] .search-exact-match {
   background-color: rgba(76, 175, 80, 0.1) !important;
