@@ -234,7 +234,7 @@ iframe{
 
 /* Search result highlighting on target pages */
 mark[data-markjs="true"] {
-  background-color: #ffeb3b !important;
+  background-color: #73bc445c !important;
   color: #000 !important;
   padding: 2px 4px;
   border-radius: 3px;
@@ -274,13 +274,9 @@ mark {
   background-color: rgba(158, 158, 158, 0.05) !important;
 }
 
-mark[data-markjs=true]{
-  background-color: #73bc445c !important;
-}
-
 /* Dark mode adjustments for quality indicators */
 [data-theme='dark'] .search-exact-match {
-  background-color: rgba(76, 175, 80, 0.1) !important;
+  background-color: #73bc44 !important;
 }
 
 [data-theme='dark'] .search-partial-match {
