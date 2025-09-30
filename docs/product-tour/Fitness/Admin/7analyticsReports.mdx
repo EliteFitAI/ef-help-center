@@ -1,91 +1,67 @@
-# Analytics / Reports
+import Admonition from '@theme/Admonition';
 
-The analytics section in the EliteFit.AI admin portal provides insights into user performance and activity. Follow the steps below to access and interpret key reports.
+# Report
 
----
-
-## To view the overall report:
-
-1. Navigate to the **Analytics** section and click on **"Report"** to view available report options.
-2. To view workout-related data, click on **"Workout"** – this includes workout history, rep counts, accuracy, and workout dates.
-3. To see individual user/patient details, click on **"Personal"** – this includes basic user information.
-
-<div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-around', gap: '2rem', flexWrap: 'wrap' }}>
-
-<div style={{ flex: 1, minWidth: '100px' }}>
-
-<img alt="Analytics page" src="/img/Analytics2.webp" height="300" style={{ objectFit: 'contain', width: "100%", maxHeight: '450px' }} />
-
-</div>
-
-<div style={{ flex: 1, minWidth: '100px'}}>
-
-<img alt="Analytics page" src="/img/Analytics1.webp" height="300" style={{ objectFit: 'contain', width: "100%", maxHeight: '450px'}} />
-
-</div>
-</div><br />
-
-
-4. To download the report, click on "**Export Report**".
-
-![Analytics page](/img/Analytic3.webp)
+The *Analytics* section allows you to generate, filter, and export reports for better insights into user activities and team performance.
+Accessing reports
+1. Go to the *Analytics* section and click on Reports.
+1. A dropdown will appear with two options: *Workouts* and *Personal*.
+1. Select the type of report you want to generate.
 
 ---
 
-## Treatment wise report
+## Workout reports
 
-The treatment wise report in the EliteFit.AI admin portal offers detailed insights into individual treatment plans.
+ 1. Admins can view all users’ reports based on the workouts they have performed.
 
-<div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+![Treatment plan page](/img/WorkoutReport1.webp)
 
+ 2. On the left corner, click on the *Filter* option.
+ 1. Reports can be filtered by: Users, Teams, Workout Duration, Accuracy, Repetitions, Calories Burnt, Workout Date.
+ 1. After applying filters, click on Search and the filtered reports will be displayed.
 
-<div style={{ flex: 1, minWidth: '250px' }}>
+![Treatment plan page](/img/WorkoutReport2.webp)
 
-![Treatment Wise Report](/img/Analytic4.webp)
+ 5. To remove filters, click on *Reset Filters* and close the filter tab by clicking on *Filter* again.
 
-</div>
-<div style={{ flex: 1, width: "300px" }}>
+![Treatment plan page](/img/WorkoutReport3.webp)
 
-Go to the **Video Management** section:
+## Exporting reports
 
-1. Click on **Treatment Plan**.
-2. Click on the treatment plan name. This will take you to the **Physio Report**, where you can view: <br />
-   a. Exercises assigned  
-   b. Number of sets assigned  
-   c. Feedback received  
-   d. Movement analysis  
+ 1. On the left corner, click the green *Export Report* button.
+ 1. A pop-up will appear with two options:
+    - Export Current Page
+    - Export All Pages
 
-And much more detailed information related to the treatment plan.
+![Treatment plan page](/img/WorkoutReport4.webp)
 
-</div>
-</div>
+ 3. Select the desired option and click Export.
+ 3. The report will be downloaded as an Excel file.
 
----
+![Treatment plan page](/img/WorkoutReport5.webp)
 
-## Sample report
+## Scheduling reports
 
-The physiotherapy program report offers a summarized overview of a patient’s treatment plan and performance analytics.
+ 1. Next to the *Export Report* button, click the dropdown arrow.
+ 1. You will see two options: Schedule and History.
 
-### Key sections:
+![Treatment plan page](/img/WorkoutReport7.webp)
 
-- **Patient information**: Basic details such as name, age, height, weight, and assigned practitioner.
-- **Prescribed workouts**: Displays the treatment program name and a list of assigned exercises.
-- **Feedback summary**: Practitioner feedback and total counts reflecting patient performance and form quality.
-- **Workout log**: A table showing daily performance metrics, including sets, reps, and time spent.
-- **Exercise report panel**: Includes session frequency, duration, and number of sets per day.
-- **Performance summary**: Highlights average session duration, accuracy rate, and completion status.
-- **Movement analysis chart**: Visual representation of the patient’s movement performance across sessions.
+ 3. Under Schedule, you can:
+     - Set the frequency (Daily, Weekly, Monthly).
+     - Select the *Delivery Time*.
+     - Add the *Email Recipient* where the report should be sent.
 
-This report helps practitioners track progress and adjust treatment plans accordingly.
+![Treatment plan page](/img/WorkoutReport6.webp)
 
-<div style={{ display: 'flex', alignItems: 'flex-start', gap: '1rem', flexWrap: 'wrap' }}>
-  <div style={{ flex: 1, minWidth: '300px' }}>
-    <img src="/img/Analytic8.webp" alt="Treatment Wise Report" style={{ height: '230px', width: '100%' }} />
-    <img src="/img/Analytic6.webp" alt="Treatment Wise Report" style={{ height: '230px', width: '100%' }} />
-  </div>
+     - Click *Schedule* to confirm.
 
-  <div style={{ flex: 1, minWidth: '300px' }}>
-    <img src="/img/Analytic5.webp" alt="Treatment Wise Report" style={{ height: '230px', width: '100%' }} />
-    <img src="/img/Analytic7.webp" alt="Treatment Wise Report" style={{ height: '230px', width: '100%' }} />
-  </div>
-</div>
+![Treatment plan page](/img/WorkoutReport8.webp)
+
+ 4. Under *History*, you can view all the reports you have scheduled previously.
+
+![Treatment plan page](/img/WorkoutReport9.webp)
+
+<Admonition type="tip" title="Scheduling">
+  Use scheduling to automate regular report delivery and save time.
+</Admonition>

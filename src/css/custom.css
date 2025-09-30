@@ -1,170 +1,73 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Global Styles & Configuration
+ * Infima CSS framework with Tailwind integration
  */
 
 @import "tailwindcss";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-/* You can override the default Infima variables here. */
+/* ============================================================================
+   CSS VARIABLES - Root & Theme Configuration
+   ========================================================================== */
+
 :root {
+  /* Primary Colors */
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
-  --ifm-navbar-height: 5rem;
   --ifm-color-primary-darker: #277148;
   --ifm-color-primary-darkest: #205d3b;
   --ifm-color-primary-light: #33925d;
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest2: #333;
   --ifm-color-primary-lightest: #3cad6e;
+
+  /* Layout */
+  --ifm-navbar-height: 5rem;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Theme Specific */
   --text: #333;
   --border-color: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
+  /* Primary Colors - Dark Mode */
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
-  --ifm-navbar-height: 5rem;
   --ifm-color-primary-darker: #1fa588;
   --ifm-color-primary-darkest: #1a8870;
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest2: #4fddbf;
   --ifm-color-primary-lightest: #4fddbf;
+
+  /* Layout */
+  --ifm-navbar-height: 5rem;
+
+  /* Theme Specific */
   --text: #fff;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --border-color: #4fddbf;
-}
-/* src/css/custom.css */
-.ef-footer {
-  background-color: #000000;
-  color: #ffffff;
-  text-align: start !important;
-  font-size: 14px;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
-.navbar--fixed-top{
+/* Badge Variables */
+:root {
+  --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%);
+  --badge-color: cadetblue;
+  --badge-glow: #fff;
+  --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* ============================================================================
+   GLOBAL OVERRIDES & BASE STYLES
+   ========================================================================== */
+
+.navbar--fixed-top {
   height: unset !important;
 }
 
-.ef-footer .ef-footer-logo {
-  width: fit-content;
-  text-align: center;
-}
-
-a p{
-  margin: 0;
-}
-
-ol > li::marker {
-   content: counter(list-item) ".  ";
-   font-weight: 600;
-    font-size: 0.9rem;
-   color: #374151;
- }
-
-ul{
-  list-style: disc;
-}
-
-.ef-footer .ef-footer-logo img {
-  width: 40px;
-  margin-bottom: 10px;
-}
-
-.ef-footer .ef-footer-logo .logo-text {
-  letter-spacing: 3px;
-}
-
-.ef-footer .text-footer {
-  margin-bottom: 10px;
-}
-
-.ef-footer h2 {
-  font-weight: 700;
-  font-size: 17px;
-  color: var(--ifm-color-primary);
-}
-
-.ef-footer .social-logo a {
-  margin-right: 20px;
-  width: 20px;
-}
-
-.ef-footer .social-logo img {
-  display: inline-block;
-  height: 20px;
-  width: 20px;
-}
-
-.ef-footer ul {
-  list-style: none;
-  padding: 0;
-}
-
-.ef-footer ul li {
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-.ef-footer ul li a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.ef-footer ul li a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-/* Bootstrap Grid System - Column */
-.col-md-4 {
-  flex: 0 0 33.333333%;
-  position: relative;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-/* Margin Bottom Utility Classes */
-.mb-3 {
-  margin-bottom: 1rem !important; /* 16px */
-}
-
-.mb-4 {
-  margin-bottom: 1.5rem !important; /* 24px */
-}
-
-/* Flexbox Utilities (if needed) */
-.d-flex {
-  display: flex !important;
-}
-
-.justify-content-between {
-  justify-content: space-between !important;
-}
-
-.align-items-center {
-  align-items: center !important;
-}
-
-/* Image Styling */
-.img-fluid {
-  max-width: 100%;
-  height: auto;
-}
-
-/* Text Alignment */
-.text-start {
-  text-align: left !important;
-}
-
-/* Link Styling */
 a {
   text-decoration: none;
 }
@@ -173,102 +76,38 @@ a:hover {
   text-decoration: none;
 }
 
-/* Social Logo Container */
-.social-logo {
-  display: flex;
-  gap: 20px; /* Adjust the gap between icons as needed */
+a p {
+  margin: 0;
 }
 
-.social-logo a {
-  display: inline-block;
-  width: 20px;
+/* ============================================================================
+   TYPOGRAPHY & LIST STYLES
+   ========================================================================== */
+
+ol > li::marker {
+  content: counter(list-item) ".  ";
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #374151;
 }
 
-/*.menu__link--sublist-caret::after{*/
-/*  background: var(--ifm-menu-link-sublist-icon) 50% / 24px 24px;*/
-/*}*/
-
-.social-logo img {
-  height: 20px; /* Adjust the size of the icons */
-  width: 20px; /* Adjust the size of the icons */
+ul {
+  list-style: disc;
 }
 
-img[alt=Stick] { width: 100%; height: 500px; object-fit: contain;}
-img[alt=Analysis4] { width: 100%; object-fit: contain;}
-img[alt=Navigation] { height: 80px; }
-img[alt=videolibrary] {width: 100%; height: 400px; object-fit: contain;}
-img[alt=InviteUser] {width: 100%; height: 250px; object-fit: contain;}
-img[alt=Physiotherapytab] {display: none}
-img[alt=Physiotherapytab1] {display: none}
-img[alt=Physiotherapymobile] {display: none}
-img[alt='User Flow for Assessments'] {display: block}
-img[alt='User Flow for Assessments Mob'] {display: none}
-img[alt='Admin User Management'],
-img[alt='EliteFit.AI Library'],
-img[alt='Treatment plan page'],
-img[alt='Program page']{
-  max-height: 500px;
-  object-fit: contain;
-}
-
-.boldText {
-  font-size: large;
-  color: var(--text); /* Your brand color */
-}
-.faq-vid{
-  display: flex;
-  align-items: start;
-  justify-content: start;
-}
-
-iframe{
-  width: 100%;
-  height: 400px;
-}
-
-.markdown li p{
+.markdown li p {
   margin: 0;
   padding: 0;
 }
 
-/* Customize input field */
-.DocSearch-Button {
-  background-color: #f9f9f9;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+.boldText {
+  font-size: large;
+  color: var(--text);
 }
 
-/* Hover effect */
-.DocSearch-Button:hover {
-  background-color: #e6e6e6;
-}
-
-/* Customize the dropdown modal */
-.DocSearch-Modal {
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-}
-
-/* Result title */
-.DocSearch-Hit-title {
-  color: #73bc45;
-  font-weight: 600;
-}
-
-/* Result category */
-.DocSearch-Hit-path {
-  color: #888;
-  font-size: 13px;
-}
-
-/* Highlighted text */
-.DocSearch-Hit-content mark {
-  background: transparent;
-  color: #d23669;
-  font-weight: bold;
-}
-
+/* ============================================================================
+   HERO SECTION
+   ========================================================================== */
 
 .hero {
   position: relative;
@@ -295,13 +134,6 @@ iframe{
   opacity: 0.6;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
 .hero-content {
   opacity: 0;
   transform: translateY(20px);
@@ -326,13 +158,30 @@ iframe{
 .hero__subtitle {
   font-size: 1.5rem;
   margin-bottom: 2.5rem;
-  /*max-width: 700px;*/
   text-align: center;
-  /*margin-left: auto;*/
-  /*margin-right: auto;*/
   font-weight: 400;
 }
 
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
+}
+
+.hero-visual.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================================================================
+   BUTTONS
+   ========================================================================== */
+
+/* Hero Buttons Container */
 .hero-buttons {
   display: flex;
   justify-content: center;
@@ -341,6 +190,7 @@ iframe{
   margin-top: 2rem;
 }
 
+/* Base Hero Button */
 .hero-button {
   display: inline-flex;
   align-items: center;
@@ -364,6 +214,63 @@ iframe{
   transform: translateY(-1px);
 }
 
+.button-icon {
+  margin-right: 0.75rem;
+  font-size: 1.25rem;
+}
+
+/* Primary Header Button */
+.button--primary-header {
+  background: linear-gradient(135deg, #73BC45 0%, #5ea23a 100%);
+  color: #FFFFFF;
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
+  position: relative;
+  overflow: hidden;
+  animation: pulse 2s infinite;
+}
+
+.button--primary-header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 16px rgba(0,0,0,0.25), inset 0 2px 2px rgba(255,255,255,0.25);
+  background-color: #00a37c;
+  color: white;
+  border-color: #00a37c;
+}
+
+.button--primary-header span {
+  color: white;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  animation: gradientShift 12s ease infinite;
+  overflow: hidden;
+}
+
+.button--primary-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 80%;
+  height: 100%;
+  background: linear-gradient(
+          120deg,
+          rgba(255, 255, 255, 0) 20%,
+          rgba(255, 255, 255, 0.3) 50%,
+          rgba(255, 255, 255, 0) 80%
+  );
+  animation: shine 4s infinite;
+}
+
+/* Secondary Button */
 .button--secondary {
   padding: .75rem 1.5rem;
   border-radius: .5rem;
@@ -381,89 +288,372 @@ iframe{
 }
 
 .button--secondary:hover {
-  /*background-color: transparent;*/
   color: #73bc45;
 }
-/* Main button container */
-.button--primary-header {
-  background: linear-gradient(135deg, #73BC45 0%, #5ea23a 100%); /* slight depth */
-  color: #FFFFFF;
-  padding: .75rem 1.5rem;
-  border-radius: .5rem;
-  text-decoration: none;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: .5rem;
-  transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
-  box-shadow: 0 4px 6px -1px rgba(0,0,0,.1), 0 2px 4px -1px rgba(0,0,0,.06);
-  position: relative;
-  overflow: hidden;
-  animation: pulse 2s infinite;
-}
 
-/* Hover 3D lift */
-.button--primary-header:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 16px rgba(0,0,0,0.25), inset 0 2px 2px rgba(255,255,255,0.25);
-}
-
-/* Pastel rainbow gradient text */
-.button--primary-header span {
-  color: white;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
-  animation: gradientShift 12s ease infinite;
-  overflow: hidden;
-}
-
-/* Shine effect on text */
-.button--primary-header::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 80%;
-  height: 100%;
-  background: linear-gradient(
-          120deg,
-          rgba(255, 255, 255, 0) 20%,
-          rgba(255, 255, 255, 0.3) 50%,
-          rgba(255, 255, 255, 0) 80%
-  );
-  animation: shine 4s infinite;
-}
-
-/* Text gradient animation */
-@keyframes gradientShift {
-  0%   { background-position: 0 50%; }
-  50%  { background-position: 100% 50%; }
-  100% { background-position: 0 50%; }
-}
-
-/* Shine animation */
-@keyframes shine {
-  0%   { left: -100%; }
-  100% { left: 150%; }
-}
-
-/* Pulse animation from your original */
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50%      { transform: scale(1.05); }
-}
-
-.pulse{
+.pulse {
   animation: pulse2 2s infinite;
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
 }
-
 
 .animate-gradient-x {
   animation: gradient-x 4s ease infinite;
 }
 
+/* ============================================================================
+   BADGES & FEATURE INDICATORS
+   ========================================================================== */
+
+.new-feature,
+.new-featurep {
+  position: relative;
+}
+
+.new-feature::after {
+  content: 'NEW';
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-family: var(--badge-font), sans-serif;
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--badge-glow);
+  padding: 3px 6px;
+  border-radius: 6px;
+  animation: floatAndPulse 2.5s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(4px);
+}
+
+.new-feature:hover::after {
+  animation-duration: 0.8s;
+}
+
+.new-featurep::before {
+  content: 'NEW';
+  position: absolute;
+  top: 5px;
+  right: 35px;
+  font-family: var(--badge-font), sans-serif;
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--badge-color);
+  padding: 3px 6px;
+  border-radius: 6px;
+  animation: floatAndPulse 2.5s ease-in-out infinite;
+  user-select: none;
+  pointer-events: none;
+  -webkit-font-smoothing: antialiased;
+  backdrop-filter: blur(4px);
+}
+
+.new-featurep:hover::before {
+  animation-duration: 0.8s;
+}
+
+/* ============================================================================
+   FOOTER
+   ========================================================================== */
+
+.ef-footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: start !important;
+  font-size: 14px;
+}
+
+.ef-footer .ef-footer-logo {
+  width: fit-content;
+  text-align: center;
+}
+
+.ef-footer .ef-footer-logo img {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.ef-footer .ef-footer-logo .logo-text {
+  letter-spacing: 3px;
+}
+
+.ef-footer .text-footer {
+  margin-bottom: 10px;
+}
+
+.ef-footer h2 {
+  font-weight: 700;
+  font-size: 17px;
+  color: var(--ifm-color-primary);
+}
+
+.ef-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ef-footer ul li {
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.ef-footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.ef-footer ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.ef-footer .social-logo a {
+  margin-right: 20px;
+  width: 20px;
+}
+
+.ef-footer .social-logo img {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+/* ============================================================================
+   SEARCH (DocSearch)
+   ========================================================================== */
+
+.DocSearch-Button {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.DocSearch-Button:hover {
+  background-color: #e6e6e6;
+}
+
+.DocSearch-Modal {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.DocSearch-Hit-title {
+  color: #73bc45;
+  font-weight: 600;
+}
+
+.DocSearch-Hit-path {
+  color: #888;
+  font-size: 13px;
+}
+
+.DocSearch-Hit-content mark {
+  background: transparent;
+  color: #d23669;
+  font-weight: bold;
+}
+
+/* ============================================================================
+   UTILITY CLASSES
+   ========================================================================== */
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* Bootstrap Grid System */
+.col-md-4 {
+  flex: 0 0 33.333333%;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Margin Utilities */
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+/* Flexbox Utilities */
+.d-flex {
+  display: flex !important;
+}
+
+.justify-content-between {
+  justify-content: space-between !important;
+}
+
+.align-items-center {
+  align-items: center !important;
+}
+
+/* Image Utilities */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Text Alignment */
+.text-start {
+  text-align: left !important;
+}
+
+/* Social Logo Container */
+.social-logo {
+  display: flex;
+  gap: 20px;
+}
+
+.social-logo a {
+  display: inline-block;
+  width: 20px;
+}
+
+.social-logo img {
+  height: 20px;
+  width: 20px;
+}
+
+/* ============================================================================
+   MEDIA ELEMENTS
+   ========================================================================== */
+
+.faq-vid {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+iframe {
+  width: 100%;
+  height: 400px;
+}
+
+/* ============================================================================
+   IMAGE SPECIFIC STYLES
+   ========================================================================== */
+
+img[alt=Stick] {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+img[alt=Analysis4] {
+  width: 100%;
+  object-fit: contain;
+}
+
+img[alt=Navigation] {
+  height: 80px;
+}
+
+img[alt=videolibrary] {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+}
+
+img[alt=InviteUser] {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+img[alt=Physiotherapytab],
+img[alt=Physiotherapytab1],
+img[alt=Physiotherapymobile] {
+  display: none;
+}
+
+img[alt='User Flow for Assessments'] {
+  display: block;
+}
+
+img[alt='User Flow for Assessments Mob'] {
+  display: none;
+}
+
+img[alt='Admin User Management'],
+img[alt='EliteFit.AI Library'],
+img[alt='Treatment plan page'],
+img[alt='Program page'] {
+  max-height: 500px;
+  object-fit: contain;
+}
+
+/* ============================================================================
+   ANIMATIONS & KEYFRAMES
+   ========================================================================== */
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 #4a90e2b3;
+  }
+  70% {
+    box-shadow: 0 0 0 10px #4a90e200;
+  }
+  100% {
+    box-shadow: 0 0 #4a90e200;
+  }
+}
+
+@keyframes pulse2 {
+  0% {
+    box-shadow: 0 0 #4a90e2;
+  }
+  70% {
+    box-shadow: 0 0 0 10px #4a90e200;
+  }
+  100% {
+    box-shadow: 0 0 #4a90e200;
+  }
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes floatAndPulse {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-2px) scale(1.05);
+  }
+}
 
 @keyframes gradient-x {
   0%, 100% {
@@ -474,95 +664,6 @@ iframe{
   }
 }
 
-.button--primary-header:hover {
-  background-color: #00a37c;
-  color: white;
-  border-color: #00a37c;
-}
-
-:root {
-  --badge-bg: linear-gradient(135deg, #ff6b6b 0%, #ff4757 100%); /* Modern gradient */
-  --badge-color: cadetblue;
-  --badge-glow: #fff;
-  --badge-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
-}
-
-.new-feature, .new-featurep {
-  position: relative;
-}
-
-.new-feature::after {
-  content: 'NEW';
-  /* Layout */
-  position: absolute;
-  top: 5px; /* Position it slightly above the text */
-  right: 5px; /* Position it to the right of the text */
-  /* Typography */
-  font-family: var(--badge-font), sans-serif;
-  font-size: 0.5rem; /* Slightly smaller, tighter */
-  font-weight: 800; /* Heavier weight for impact */
-  letter-spacing: 0.05em; /* Small letter spacing for modernity */
-  text-transform: uppercase;
-  /* Visual Style */
-  color: var(--badge-glow);
-  padding: 3px 6px; /* Balanced padding */
-  border-radius: 6px; /* Slightly smaller radius */
-  /* Animation & Effects */
-  animation: floatAndPulse 2.5s ease-in-out infinite;
-  user-select: none;
-  pointer-events: none;
-  /* Ensure clean rendering */
-  -webkit-font-smoothing: antialiased;
-  backdrop-filter: blur(4px); /* Subtle blur for a "frosted" effect (optional) */
-}
-
-/* Hover effect on the parent element */
-.new-feature:hover::after {
-  /*color: white;*/
-  animation-duration: 0.8s; /* Speed up animation on hover */
-}
-
-.new-featurep::before {
-  content: 'NEW';
-  /* Layout */
-  position: absolute;
-  top: 5px; /* Position it slightly above the text */
-  right: 35px; /* Position it to the right of the text */
-  /* Typography */
-  font-family: var(--badge-font), sans-serif;
-  font-size: 0.5rem; /* Slightly smaller, tighter */
-  font-weight: 800; /* Heavier weight for impact */
-  letter-spacing: 0.05em; /* Small letter spacing for modernity */
-  text-transform: uppercase;
-  /* Visual Style */
-  color: var(--badge-color);
-  padding: 3px 6px; /* Balanced padding */
-  border-radius: 6px; /* Slightly smaller radius */
-  /* Animation & Effects */
-  animation: floatAndPulse 2.5s ease-in-out infinite;
-  user-select: none;
-  pointer-events: none;
-  /* Ensure clean rendering */
-  -webkit-font-smoothing: antialiased;
-  backdrop-filter: blur(4px); /* Subtle blur for a "frosted" effect (optional) */
-}
-
-/* Hover effect on the parent element */
-.new-featurep:hover::before {
-  animation-duration: 0.8s; /* Speed up animation on hover */
-}
-
-/* Single, combined smooth animation */
-@keyframes floatAndPulse {
-  0%, 100% {
-    transform: translateY(0) scale(1);
-  }
-  50% {
-    transform: translateY(-2px) scale(1.05); /* Float up and scale slightly */
-  }
-}
-
-
 @keyframes textRainbow {
   0% {
     background-position: 0 50%;
@@ -572,55 +673,53 @@ iframe{
   }
 }
 
+/* ============================================================================
+   RESPONSIVE DESIGN - MEDIA QUERIES
+   ========================================================================== */
 
-.button-icon {
-  margin-right: 0.75rem;
-  font-size: 1.25rem;
-}
-
-.hero-visual {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 3rem;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.8s ease 0.3s, transform 0.8s ease 0.3s;
-}
-
-.hero-visual.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-@keyframes pulse{
-  0% {
-    box-shadow: 0 0 #4a90e2b3;
-  }
-
-  70% {
-    box-shadow: 0 0 0 10px #4a90e200;
-  }
-  100% {
-    box-shadow: 0 0 #4a90e200;
+/* Large Tablets and Below (1338px) */
+@media (max-width: 1338px) {
+  .discription {
+    flex-direction: column;
   }
 }
 
-@keyframes pulse2{
-  0% {
-    box-shadow: 0 0 #4a90e2;
+/* Tablets and Below (1024px) */
+@media screen and (max-width: 1024px) {
+  img[alt=Physiotherapy11] {
+    display: none;
   }
 
-  70% {
-    box-shadow: 0 0 0 10px #4a90e200;
+  img[alt="User Flow for Patients"] {
+    display: none;
   }
-  100% {
-    box-shadow: 0 0 #4a90e200;
+
+  img[alt=Physiotherapytab],
+  img[alt=Physiotherapytab1] {
+    display: block;
+  }
+
+  img[alt=Physiotherapymobile] {
+    display: none;
   }
 }
 
+/* Mobile Devices (768px) */
+@media screen and (max-width: 768px) {
+  img[alt=Physiotherapy11],
+  img[alt="User flow"],
+  img[alt='User Flow for Assessments'],
+  img[alt=Physiotherapytab] {
+    display: none;
+  }
 
-/* Responsive design */
+  img[alt='User Flow for Assessments Mob'],
+  img[alt=Physiotherapymobile] {
+    display: block;
+  }
+}
+
+/* Mobile Hero Adjustments */
 @media (max-width: 768px) {
   .hero {
     padding: 3rem 1rem;
@@ -654,29 +753,5 @@ iframe{
   .floating-card {
     width: 80%;
     max-width: 250px;
-  }
-}
-
-
-@media screen and (max-width: 1024px){
-  img[alt=Physiotherapy11]{ display: none; }
-  img[alt="User Flow for Patients"]{ display: none; }
-  img[alt=Physiotherapytab]{ display: block; }
-  img[alt=Physiotherapytab1]{ display: block; }
-  img[alt=Physiotherapymobile]{ display: none; }
-}
-@media screen and (max-width: 768px){
-  img[alt=Physiotherapy11]{ display: none; }
-  img[alt="User flow"]{ display: none; }
-  img[alt='User Flow for Assessments Mob'] {display: block}
-  img[alt='User Flow for Assessments'] {display: none}
-  img[alt=Physiotherapytab]{ display: none; }
-  img[alt=Physiotherapymobile]{ display: block; }
-}
-
-
-@media (max-width: 1338px){
-  .discription{
-    flex-direction: column
   }
 }
