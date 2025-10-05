@@ -13,43 +13,87 @@ const sidebars = {
       items: [
         {
           type: 'category',
-          label: 'Admin',
+          label: 'Fitness',
           items: [
             {
               type: 'category',
-              label: 'Admin Portal',
+              label: 'Admin',
               items: [
-                'product-tour/Admin/Admin Portal/4addingUsers',
-                'product-tour/Admin/Admin Portal/5viewingLibrary',
-                'product-tour/Admin/Admin Portal/6assigningProgram',
-                'product-tour/Admin/Admin Portal/7analyticsReports',
-                'product-tour/Admin/Admin Portal/8otherFeatures',
+                'product-tour/Fitness/Admin/4addingUsers',
+                'product-tour/Fitness/Admin/5viewingLibrary',
+                'product-tour/Fitness/Admin/6assigningProgram',
+                'product-tour/Fitness/Admin/9creatingTeams',
+                'product-tour/Fitness/Admin/7analyticsReports',
+                'product-tour/Fitness/Admin/8otherFeatures',
+                'product-tour/Fitness/Admin/1userJourney',
+                'product-tour/Fitness/Admin/2adminLogin',
               ],
             },
-            'product-tour/Admin/1userJourney',
-            'product-tour/Admin/2adminLogin',
-          ],
+
+            {
+              type: 'category',
+              label: 'User',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Physio Portal',
+                  items: [
+                    'product-tour/Fitness/User/Physio Portal/1startingExcercise',
+                    'product-tour/Fitness/User/Physio Portal/2duringExcersize',
+                    'product-tour/Fitness/User/Physio Portal/3endExcercise',
+                    'product-tour/Fitness/User/Physio Portal/4viewExcercise',
+                    'product-tour/Fitness/User/Physio Portal/5viewProgress',
+                  ],
+                },
+                'product-tour/Fitness/User/1userFlow',
+                'product-tour/Fitness/User/2patientSignup',
+                'product-tour/Fitness/User/3patientSignIn',
+                'product-tour/Fitness/User/5otherFeatures',
+              ],
+            },
+          ]
         },
         {
           type: 'category',
-          label: 'User',
+          label: 'Physiotherapy',
           items: [
             {
               type: 'category',
-              label: 'Physio Portal',
+              label: 'Admin',
               items: [
-                'product-tour/User/Physio Portal/1startingExcercise',
-                'product-tour/User/Physio Portal/2duringExcersize',
-                'product-tour/User/Physio Portal/3endExcercise',
-                'product-tour/User/Physio Portal/4viewExcercise',
-                'product-tour/User/Physio Portal/5viewProgress',
+                'product-tour/Physiotherapy/Admin/4addingUsers',
+                'product-tour/Physiotherapy/Admin/5viewingLibrary',
+                'product-tour/Physiotherapy/Admin/6assigningProgram',
+                'product-tour/Physiotherapy/Admin/9creatingTeams',
+                'product-tour/Physiotherapy/Admin/7analyticsReports',
+                'product-tour/Physiotherapy/Admin/8otherFeatures',
+                'product-tour/Physiotherapy/Admin/1userJourney',
+                'product-tour/Physiotherapy/Admin/2adminLogin',
               ],
             },
-            'product-tour/User/1userFlow',
-            'product-tour/User/2patientSignup',
-            'product-tour/User/3patientSignIn',
-            'product-tour/User/5otherFeatures',
-          ],
+
+            {
+              type: 'category',
+              label: 'User',
+              items: [
+                {
+                  type: 'category',
+                  label: 'Physio Portal',
+                  items: [
+                    'product-tour/Physiotherapy/User/Physio Portal/1startingExcercise',
+                    'product-tour/Physiotherapy/User/Physio Portal/2duringExcersize',
+                    'product-tour/Physiotherapy/User/Physio Portal/3endExcercise',
+                    'product-tour/Physiotherapy/User/Physio Portal/4viewExcercise',
+                    'product-tour/Physiotherapy/User/Physio Portal/5viewProgress',
+                  ],
+                },
+                'product-tour/Physiotherapy/User/1userFlow',
+                'product-tour/Physiotherapy/User/2patientSignup',
+                'product-tour/Physiotherapy/User/3patientSignIn',
+                'product-tour/Physiotherapy/User/5otherFeatures',
+              ],
+            },
+          ]
         },
         {
           type: 'category',

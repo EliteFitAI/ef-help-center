@@ -58,6 +58,7 @@ const config = {
           sidebarPath: './sidebars.js',
           routeBasePath: '/',
           lastVersion: 'current',
+          breadcrumbs: false,
           versions: {
             current: {
               label: '2.0',
