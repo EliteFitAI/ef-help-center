@@ -36,7 +36,7 @@ const sidebars = {
               items: [
                 {
                   type: 'category',
-                  label: 'Physio Portal',
+                  label: 'Fitness Portal',
                   items: [
                     'product-tour/Fitness/User/Physio Portal/1startingExcercise',
                     'product-tour/Fitness/User/Physio Portal/2duringExcersize',
