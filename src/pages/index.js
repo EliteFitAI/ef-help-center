@@ -59,7 +59,7 @@ export default function Home() {
                 <p className="text-gray-600 text-sm">Learn the basics and set up quickly.</p>
               </Link>
 
-              <Link to="/product-tour/Admin/1userJourney" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Link to="/product-tour/Fitness/Admin/1userJourney" style={{transition: 'all 0.5s ease'}} className="text-left group cursor-pointer flex flex-col p-5 border border-gray-100 dark:border-gray-700 rounded-xl dark:bg-gray-800 bg-green-50 hover:border-green-300 dark:hover:border-green-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
                 <div className="flex items-center mb-3">
                   <div className="text-lg font-bold text-gray-900 m-0">
                     <Link to="/product-tour/Fitness/Admin/1userJourney" className="text-inherit no-underline hover:text-red-600 transition-colors">Features & tools</Link>
