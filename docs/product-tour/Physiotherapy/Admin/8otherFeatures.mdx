@@ -58,24 +58,28 @@ Our team will respond within 24 hours to assist you.
 
 ## Achievement section
 
-<div style={{
-  display: 'flex',
-  flexDirection: ['column', 'row'],
-  gap: '2rem',
-  margin: '2rem 0'
-}} class="discription">
-
-
-  {/* Right side - Image */}
-  <div style={{
-    flex: 1,
+<div
+  style={{
     display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'flex-start'
-  }}>
-    <img 
-      src="/img/Achievement2.webp" 
-      alt="Notification Interface" 
+    flexDirection: 'row',
+    gap: '2rem',
+    margin: '2rem 0'
+  }}
+  class="discription"
+>
+
+  {/* Right section - image */}
+  <div
+    style={{
+      flex: 1,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'flex-start'
+    }}
+  >
+    <img
+      src="/img/Achievement2.webp"
+      alt="Achievement Interface"
       style={{
         maxWidth: '100%',
         height: 'auto',
@@ -84,24 +88,73 @@ Our team will respond within 24 hours to assist you.
       }}
     />
   </div>
-  {/* Left side - Content */}
+
+  {/* Left section - content */}
   <div style={{ flex: 1 }}>
-    
-    <p style={{margin: 0}}>To create achievement badges</p>
-    
-<ol>
-    <li>Write the name of the achievement (example: <em>10-Day Workout Streak</em>).</li>
-    <li>Write a short description explaining the achievement (example: <em>Awarded for completing a workout every day for 10 days</em>).</li>
-    <li>Upload an achievement badge image (recommended size: <strong>1920 x 1080 px</strong>, <strong>16:9</strong> ratio).</li>
-    <li>Select the <strong>start date</strong> from which the achievement tracking should begin.</li>
-    <li>Select the <strong>end date</strong> after which the achievement tracking should stop.</li>
-    <li>Choose the specific weekdays this achievement should apply to (example: <strong>M, W, F</strong> for Monday, Wednesday, Friday).</li>
-    <li>Select the <strong>evaluation method</strong> (<em>Per Workout</em> or <em>All Workouts</em>).</li>
-    <li>Enter the <strong>number of points</strong> to be awarded for achieving this badge.</li>
-    <li>Set the <strong>condition(s)</strong> under which this achievement will be granted (example: <em>workout duration &gt; 30 mins</em>).</li>
-    <li>Toggle the <strong>"Activate"</strong> option to enable or disable tracking for this achievement.</li>
-    <li>Toggle <strong>"Can Achieve only once"</strong> if users should only earn this achievement one time.</li>
-    <li>Click <strong>"Submit"</strong> to save and create the achievement.</li>
+
+  <ol>
+
+    <li>Go to the <strong>Achievements</strong> section in the left panel.</li>
+    <li>The Achievements page will open.</li>
+    <li>Click the green <strong>Create Achievement</strong> button at the top right corner.</li>
+    <li>The achievement form will open.</li>
+    <li>Enter the achievement details such as <strong>Achievement Name</strong>, <strong>Description</strong>, and <strong>Badge Image</strong>.</li>
+
+    <li>
+      Configure achievement duration
+      <ul>
+        <li>Select the <strong>Start Date</strong> and <strong>End Date</strong> for the achievement badge.</li>
+        <li>You can also select specific weekdays.</li>
+        <li>If no weekday is selected, all days will be included by default.</li>
+      </ul>
+    </li>
+
+    <li>
+      Set the evaluation method
+      <ul>
+        <li>Choose one evaluation method:
+          <ul>
+            <li>Per Workout</li>
+            <li>All Workouts</li>
+            <li>Per Program</li>
+          </ul>
+        </li>
+        <li>If <strong>Per Program</strong> is selected, an additional tab will appear.</li>
+        <li>Select the program from the list of existing programs.</li>
+      </ul>
+    </li>
+
+    <li>
+      Add conditions
+      <ul>
+        <li>For <em>Per Workout</em> or <em>All Workouts</em>, one or more conditions can be added.</li>
+        <li>Conditions can be selected based on the requirement of the badge.</li>
+      </ul>
+    </li>
+
+    <li>
+      Assign points (optional)
+      <ul>
+        <li>Points can be assigned to the badge if needed.</li>
+      </ul>
+    </li>
+
+    <li>
+      Set achievement frequency
+      <ul>
+        <li>Select whether the badge can be achieved only once or multiple times.</li>
+        <li>Use the toggle switch to set the preferred option.</li>
+      </ul>
+    </li>
+
+    <li>
+      Submit the achievement
+      <ul>
+        <li>Click <strong>Submit</strong>.</li>
+        <li>The achievement badge will be created successfully.</li>
+      </ul>
+    </li>
+
   </ol>
 
   </div>
