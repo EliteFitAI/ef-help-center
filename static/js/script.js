@@ -1,5 +1,19 @@
 (function () {
     try {
+        // First check: Check if specific keywords are in the URL path
+        const currentPath = window.location.pathname.toLowerCase();
+
+        if (currentPath.includes('assessment')) {
+            localStorage.setItem("HelpCenterMode", "Assessment");
+            return; // Exit early if found in path
+        }
+
+        if (currentPath.includes('physiotherapy')) {
+            localStorage.setItem("HelpCenterMode", "Physiotherapy");
+            return; // Exit early if found in path
+        }
+
+        // Second check: Check query parameter mode (original logic)
         const params = new URLSearchParams(window.location.search);
         const mode = params.get("mode")?.toLowerCase();
 
@@ -8,7 +22,7 @@
             localStorage.setItem("HelpCenterMode", "Fitness");
             return;
         }
-        console.log('mode: ' + mode);
+        console.log('mode from query param: ' + mode);
 
         switch (mode) {
             case "assessment":
