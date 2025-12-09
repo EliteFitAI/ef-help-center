@@ -6,14 +6,10 @@ const sidebars = {
       label: 'Get Started',
       items: ['get-started/Welcome'],
     },
-    {
-      type: 'category',
-      className: 'new-featurep',
-      label: 'Product Tour',
-      items: [
         {
           type: 'category',
-          label: 'Fitness',
+          label: 'Product - Fitness',
+          customProps: { sidebarCategory: "Fitness" },
           items: [
             {
               type: 'category',
@@ -57,7 +53,8 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Physiotherapy',
+          label: 'Product - Physiotherapy',
+          customProps: { sidebarCategory: "Physiotherapy" },
           items: [
             {
               type: 'category',
@@ -101,7 +98,8 @@ const sidebars = {
         },
         {
           type: 'category',
-          label: 'Assessments',
+          label: 'Product - Assessment',
+          customProps: { sidebarCategory: "Assessment" },
           className: 'new-featurep',
           items: [
             'product-tour/Assessments/Assessment',
@@ -127,10 +125,7 @@ const sidebars = {
               className: 'ml-2',
             },
           ],
-        }
-
-      ],
-    },
+        },
     {
       type: 'category',
       label: 'Troubleshooting Tips',

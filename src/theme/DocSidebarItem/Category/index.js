@@ -87,13 +87,18 @@ export default function DocSidebarItemCategory({
   index,
   ...props
 }) {
-  const {items, label, collapsible, className, href} = item;
+  const {items, label, collapsible, className, href, customProps} = item;
   const [classN, setClassN] = useState(className);
   const {
     docs: {
       sidebar: {autoCollapseCategories},
     },
   } = useThemeConfig();
+  const theme = localStorage.getItem('HelpCenterMode') || 'fitness';
+  let show = true;
+  if(customProps?.sidebarCategory){
+      show = customProps?.sidebarCategory === theme;
+  }
   const hrefWithSSRFallback = useCategoryHrefWithSSRFallback(item);
   const isActive = isActiveSidebarItem(item, activePath);
   const isCurrentPage = isSamePath(href, activePath);
@@ -125,72 +130,72 @@ export default function DocSidebarItemCategory({
     }
   }, [collapsible, expandedItem, index, setCollapsed, autoCollapseCategories]);
   return (
-    <li
-      className={clsx(
-        ThemeClassNames.docs.docSidebarItemCategory,
-        ThemeClassNames.docs.docSidebarItemCategoryLevel(level),
-        'menu__list-item',
-        {
-          'menu__list-item--collapsed': collapsed,
-        },
-          classN
-      )}>
-      <div
-        className={clsx('menu__list-item-collapsible', {
-          'menu__list-item-collapsible--active': isCurrentPage,
-        })}>
-        <Link
-          className={clsx('menu__link', {
-            'menu__link--sublist': collapsible,
-            'menu__link--sublist-caret': !href && collapsible,
-            'menu__link--active': isActive,
-          })}
-          onClick={
-            collapsible
-              ? (e) => {
-                  onItemClick?.(item);
-                  if(item.label === 'Product Tour') {
-                      collapsed ? setClassN('') : setClassN('new-featurep')
-                  }
-                  if (href) {
-                    updateCollapsed(false);
-                  } else {
-                    e.preventDefault();
-                    updateCollapsed();
-                  }
+    show && <li
+        className={clsx(
+            ThemeClassNames.docs.docSidebarItemCategory,
+            ThemeClassNames.docs.docSidebarItemCategoryLevel(level),
+            'menu__list-item',
+            {
+                'menu__list-item--collapsed': collapsed,
+            },
+            classN
+        )}>
+        <div
+            className={clsx('menu__list-item-collapsible', {
+                'menu__list-item-collapsible--active': isCurrentPage,
+            })}>
+            <Link
+                className={clsx('menu__link', {
+                    'menu__link--sublist': collapsible,
+                    'menu__link--sublist-caret': !href && collapsible,
+                    'menu__link--active': isActive,
+                })}
+                onClick={
+                    collapsible
+                        ? (e) => {
+                            onItemClick?.(item);
+                            if(item.label === 'Product Tour' && customProps?.sidebarCategory === 'assessment') {
+                                collapsed ? setClassN('') : setClassN('new-featurep')
+                            }
+                            if (href) {
+                                updateCollapsed(false);
+                            } else {
+                                e.preventDefault();
+                                updateCollapsed();
+                            }
+                        }
+                        : () => {
+                            onItemClick?.(item);
+                        }
                 }
-              : () => {
-                  onItemClick?.(item);
-                }
-          }
-          aria-current={isCurrentPage ? 'page' : undefined}
-          role={collapsible && !href ? 'button' : undefined}
-          aria-expanded={collapsible && !href ? !collapsed : undefined}
-          href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
-          {...props}>
-          {label}
-        </Link>
-        {href && collapsible && (
-          <CollapseButton
-            collapsed={collapsed}
-            categoryLabel={label}
-            onClick={(e) => {
-              e.preventDefault();
-              updateCollapsed();
-            }}
-          />
-        )}
-      </div>
+                aria-current={isCurrentPage ? 'page' : undefined}
+                role={collapsible && !href ? 'button' : undefined}
+                aria-expanded={collapsible && !href ? !collapsed : undefined}
+                href={collapsible ? hrefWithSSRFallback ?? '#' : hrefWithSSRFallback}
+                {...props}>
+                {label}
+            </Link>
+            {href && collapsible && (
+                <CollapseButton
+                    collapsed={collapsed}
+                    categoryLabel={label}
+                    onClick={(e) => {
+                        e.preventDefault();
+                        updateCollapsed();
+                    }}
+                />
+            )}
+        </div>
 
-      <Collapsible lazy as="ul" className="menu__list" collapsed={collapsed}>
-        <DocSidebarItems
-          items={items}
-          tabIndex={collapsed ? -1 : 0}
-          onItemClick={onItemClick}
-          activePath={activePath}
-          level={level + 1}
-        />
-      </Collapsible>
+        <Collapsible lazy as="ul" className="menu__list" collapsed={collapsed}>
+            <DocSidebarItems
+                items={items}
+                tabIndex={collapsed ? -1 : 0}
+                onItemClick={onItemClick}
+                activePath={activePath}
+                level={level + 1}
+            />
+        </Collapsible>
     </li>
   );
 }
