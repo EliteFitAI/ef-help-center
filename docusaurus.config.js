@@ -91,7 +91,7 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
+            type: 'custom-redirectSidebarButton', // We'll register this custom type
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Help Center',

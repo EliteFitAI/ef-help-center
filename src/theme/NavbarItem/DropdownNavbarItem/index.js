@@ -3,7 +3,6 @@ import DefaultDropdownNavbarItem from '@theme-original/NavbarItem/DropdownNavbar
 
 export default function DropdownNavbarItem(props) {
     const [mode, setMode] = useState("Fitness");
-    console.log(props)
 
     useEffect(() => {
         const saved = localStorage.getItem("HelpCenterMode");
