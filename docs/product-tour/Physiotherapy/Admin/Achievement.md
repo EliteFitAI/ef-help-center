@@ -75,8 +75,8 @@ Choose one evaluation method:
 
 ## Set achievement frequency
 
-1. Select whether the badge can be achieved only once or multiple times.
-2. Use the toggle switch to set the preferred option.
+1. Select whether the badge will be active or inactive.
+2. Select whether the badge can be achieved only once or multiple times.
 
 ![EliteFit.AI Library](/img/PhysioAchievement9.webp)
 
