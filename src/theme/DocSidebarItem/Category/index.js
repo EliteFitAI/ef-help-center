@@ -94,10 +94,14 @@ export default function DocSidebarItemCategory({
       sidebar: {autoCollapseCategories},
     },
   } = useThemeConfig();
-  const theme = localStorage.getItem('HelpCenterMode') || 'fitness';
+  const [actualtheme, setActualtheme] = useState('fitness')
+    useEffect(() => {
+        const theme = localStorage.getItem('HelpCenterMode') || 'fitness';
+        if(theme) setActualtheme(theme);
+    }, []);
   let show = true;
   if(customProps?.sidebarCategory){
-      show = customProps?.sidebarCategory === theme;
+      show = customProps?.sidebarCategory === actualtheme;
   }
   const hrefWithSSRFallback = useCategoryHrefWithSSRFallback(item);
   const isActive = isActiveSidebarItem(item, activePath);
