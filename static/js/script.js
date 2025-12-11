@@ -1,5 +1,10 @@
 (function () {
     try {
+        // Only run in browser environment
+        if (typeof window === 'undefined' || typeof localStorage === 'undefined') {
+            return;
+        }
+
         // First check: Check if specific keywords are in the URL path
         const currentPath = window.location.pathname.toLowerCase();
 
