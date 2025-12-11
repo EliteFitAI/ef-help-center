@@ -30,6 +30,12 @@ const config = {
       type: "text/css",
     },
   ],
+  scripts: [
+    {
+      src: '/js/script.js',
+      async: true,
+    },
+  ],
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   headTags: [
@@ -59,16 +65,6 @@ const config = {
           routeBasePath: '/',
           lastVersion: 'current',
           breadcrumbs: false,
-          versions: {
-            current: {
-              label: '2.0',
-              path: '',
-            },
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
         theme: {
@@ -95,44 +91,46 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
+            type: 'custom-redirectSidebarButton', // We'll register this custom type
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Help Center',
           },
-
           {
             type: 'html',
             position: 'right',
-            value: `<a
-                  class="hero-button button--primary-header pulse new-feature"
-                  href="/product-tour/Assessments/Assessment"
-              >
-                <span>Explore Assessments</span>
-              </a>`
+            value: `
+    <a
+      class="hero-button button--primary-header pulse new-feature"
+      href="/product-tour/Assessments/Assessment?mode=assessment"
+    >
+      <span>Explore Assessments</span>
+    </a>
+  `
           },
 
           {
-            type: 'docsVersionDropdown',
-            versions: ['current', '1.0'],
-          },
-          // {
-          //   type: 'html',
-          //   position: 'right',
-          //   value: `
-          //   <a
-          //         class="hero-button button--primary-header"
-          //         href="/product-tour/Assessments/Assessment#ready-to-begin"
-          //     >
-          //       <span>Assessments</span>
-          //     </a>
-          // `,
-          // },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+            type: 'dropdown',
+            label: 'Product',
+            position: 'left',
+            items: [
+              {
+                label: 'Fitness',
+                to: '/product-tour/Fitness/Admin/4addingUsers',
+                id: 'fitness',
+              },
+              {
+                label: 'Physiotherapy',
+                to: '/product-tour/Physiotherapy/Admin/4addingUsers',
+                id: 'physiotherapy',
+              },
+              {
+                label: 'Assessment',
+                to: '/product-tour/Assessments/Assessment',
+                id: 'assessment',
+              },
+            ],
+          }
         ],
       },
       footer: {
