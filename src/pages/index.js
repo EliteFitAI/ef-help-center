@@ -4,6 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
+import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 import React, { useState, useEffect } from 'react';
 import img from '../../static/img/Distributor_home.webp'
 
@@ -40,8 +41,13 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const mode = localStorage.getItem("HelpCenterMode");
-  const url = mode !== 'Assessment' ? `/product-tour/${mode}/Admin/4addingUsers`: '/product-tour/Assessments/Assessment';
+  const [url, setUrl] = useState('/product-tour/Assessments/Assessment');
+  if(ExecutionEnvironment.canUseDOM){
+    const mode = localStorage.getItem("HelpCenterMode");
+    let urrl = mode !== 'Assessment' ? `/product-tour/${mode}/Admin/4addingUsers`: '/product-tour/Assessments/Assessment';
+    setUrl(urrl)
+  }
+
   return (
       <Layout title="Help Center" description="Step-by-step guides to help you navigate tasks easily">
         <HomepageHeader />
