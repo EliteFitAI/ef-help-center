@@ -94,4 +94,4 @@ Choose one evaluation method:
 
 ![EliteFit.AI Library](/img/FitnessAchievement9.webp)
 
-<div style={{'color':'#9999','text-align':'right'}}>Updated on: 09 December 2025</div>
+<div style={{'color':'#9999','text-align':'right'}}>Last updated: 09 December 2025</div>

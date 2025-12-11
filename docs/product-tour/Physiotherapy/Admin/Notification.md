@@ -85,4 +85,4 @@ You can decide who will receive the notification:
 
 ![EliteFit.AI Library](/img/FitnessNotification6.webp)
 
-<div style={{'color':'#9999','text-align':'right'}}>Updated on: 09 December 2025</div>
+<div style={{'color':'#9999','text-align':'right'}}>Last updated: 09 December 2025</div>
