@@ -24,7 +24,7 @@ export default function RedirectSidebarButton(props) {
             onClick={!isHomePage ? handleClick : undefined}
             style={!isHomePage ? { cursor: 'pointer' } : {}}
         >
-            <DocSidebar {...props} label={!!isHomePage ? 'Help Center' : 'Home page'} />
+            <DocSidebar {...props} label={'Help Center'} />
         </div>
     );
 }

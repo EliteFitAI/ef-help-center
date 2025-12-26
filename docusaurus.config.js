@@ -115,22 +115,44 @@ const config = {
             position: 'left',
             items: [
               {
-                label: 'Fitness',
-                to: '/product-tour/Fitness/Admin/4addingUsers',
-                id: 'fitness',
+                type: 'html',
+                value: `
+        <a
+          class="dropdown__link"
+          href="/product-tour/Fitness/Admin/4addingUsers?mode=Fitness"
+          onclick="event.preventDefault(); window.location.assign(this.href);"
+        >
+          Fitness
+        </a>
+      `,
               },
               {
-                label: 'Physiotherapy',
-                to: '/product-tour/Physiotherapy/Admin/4addingUsers',
-                id: 'physiotherapy',
+                type: 'html',
+                value: `
+        <a
+          class="dropdown__link"
+          href="/product-tour/Physiotherapy/Admin/4addingUsers?mode=physiotherapy"
+          onclick="event.preventDefault(); window.location.assign(this.href);"
+        >
+          Physiotherapy
+        </a>
+      `,
               },
               {
-                label: 'Assessment',
-                to: '/product-tour/Assessments/Assessment',
-                id: 'assessment',
+                type: 'html',
+                value: `
+        <a
+          class="dropdown__link"
+          href="/product-tour/Assessments/Assessment?mode=Assessment"
+          onclick="event.preventDefault(); window.location.assign(this.href);"
+        >
+          Assessment
+        </a>
+      `,
               },
             ],
           }
+
         ],
       },
       footer: {
