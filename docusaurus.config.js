@@ -94,7 +94,7 @@ const config = {
             type: 'custom-redirectSidebarButton', // We'll register this custom type
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Help Center',
+            label: 'Get Started',
           },
           {
             type: 'html',
